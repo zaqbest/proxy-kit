@@ -1,10 +1,11 @@
-#!MANAGED-CONFIG https://api.sublink.dev/sub?ver=4&target=surge&tfo=true&scv=true&emoji=true&filename=LinkCube&udp=true&url=https%3A%2F%2Fapi-linkcube.net%2Fsubscribe%2Fedvdw-jvfjnljk interval=864000 strict=false
+#!MANAGED-CONFIG https://api.sublink.dev/sub?target=surge&ver=4&emoji=true&tfo=true&udp=true&scv=true&filename=LinkCube&url=https%3A%2F%2Fapi-linkcube.net%2Fsubscribe%2Fedvdw-gnrzxp5u interval=864000 strict=false
 
 [General]
+dns-server=119.29.29.29,223.5.5.5
+use-local-host-item-for-proxy=true
 bypass-system = true
 skip-proxy = 127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,100.64.0.0/10,17.0.0.0/8,localhost,*.local,passenger.t3go.cn
 bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.0.0.0/24,192.0.2.0/24,192.88.99.0/24,192.168.0.0/16,198.18.0.0/15,198.51.100.0/24,203.0.113.0/24,224.0.0.0/4,255.255.255.255/32
-dns-server = 119.29.29.29, 119.28.28.28, 180.76.76.76, 1.2.4.8
 hijack-dns = 8.8.8.8:53, 8.8.4.4:53
 loglevel = notify
 replica = false
@@ -692,6 +693,9 @@ router.asus.com = server:system
 hotspot.cslwifi.com = server:system
 amplifi.lan = server:system
 *.lan = server:system
+aliyun-bj.linkcubecloud.com=aliyun-bj.linkcube-cloud.com
+aliyun-gz.linkcubecloud.com=aliyun-gz.linkcube-cloud.com
+aliyun-sh.linkcubecloud.com=aliyun-sh.linkcube-cloud.com
 
 [Script]
 
@@ -715,8 +719,8 @@ ca-passphrase = rixCloudPKI
 
 [Proxy]
 DIRECT = direct
-Traffic: 51.05 GB / 100 GB = trojan, aliyun-gz.linkcubecloud.com, 8100, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-Expire: 2026-07-09 = trojan, aliyun-gz.linkcubecloud.com, 8100, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+Traffic: 0 GB / 100 GB = trojan, aliyun-gz.linkcubecloud.com, 8100, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+Expire: 2026-09-09 = trojan, aliyun-gz.linkcubecloud.com, 8100, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
 🇭🇰 HKG 香港 01 = trojan, aliyun-gz.linkcubecloud.com, 8100, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
 🇭🇰 HKG 香港 02 = trojan, aliyun-gz.linkcubecloud.com, 8101, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
 🇭🇰 HKG 香港 03 = trojan, aliyun-gz.linkcubecloud.com, 8103, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
@@ -768,7 +772,7 @@ Expire: 2026-07-09 = trojan, aliyun-gz.linkcubecloud.com, 8100, password=27A2AA1
 🇹🇷 TUR 土耳其 01 = trojan, aliyun-bj.linkcubecloud.com, 8614, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
 
 [Proxy Group]
-Proxies = select,HK,JP,SG,TW,US,Traffic: 51.05 GB / 100 GB,Expire: 2026-07-09,🇭🇰 HKG 香港 01,🇭🇰 HKG 香港 02,🇭🇰 HKG 香港 03,🇭🇰 HKG 香港 04,🇭🇰 HKG 香港 05,🇭🇰 HKG 香港 06,🇭🇰 HKG 香港 07,🇭🇰 HKG 香港 08,🇯🇵 JPN 日本 01,🇯🇵 JPN 日本 02,🇯🇵 JPN 日本 03,🇯🇵 JPN 日本 04,🇯🇵 JPN 日本 05,🇯🇵 JPN 日本 06,🇯🇵 JPN 日本 07,🇯🇵 JPN 日本 08,🇸🇬 SGP 狮城 01,🇸🇬 SGP 狮城 02,🇸🇬 SGP 狮城 03,🇸🇬 SGP 狮城 04,🇸🇬 SGP 狮城 05,🇸🇬 SGP 狮城 06,🇸🇬 SGP 狮城 07,🇸🇬 SGP 狮城 08,🇨🇳 TWN 台湾 01,🇨🇳 TWN 台湾 02,🇺🇸 USA 美国 01,🇺🇸 USA 美国 02,🇺🇸 USA 美国 03,🇺🇸 USA 美国 04,🇺🇸 USA 美国 05,🇺🇸 USA 美国 06,🇺🇸 USA 美国 07,🇺🇸 USA 美国 08,🇬🇧 GBR 英国 01,🇬🇧 GBR 英国 02,🇩🇪 DEU 德国 01,🇩🇪 DEU 德国 02,🇳🇱 NLD 荷兰 01,🇳🇱 NLD 荷兰 02,🇦🇷 ARG 阿根廷 01,🇧🇷 BRA 巴西 01,🇰🇷 KOR 韩国 01,🇰🇷 KOR 韩国 02,🇦🇺 AUS 澳洲 01,🇮🇳 IND 印度 01,🇨🇦 CAN 加拿大 01,🇷🇺 RUS 俄罗斯 01,🇹🇷 TUR 土耳其 01
+Proxies = select,HK,JP,SG,TW,US,Traffic: 0 GB / 100 GB,Expire: 2026-09-09,🇭🇰 HKG 香港 01,🇭🇰 HKG 香港 02,🇭🇰 HKG 香港 03,🇭🇰 HKG 香港 04,🇭🇰 HKG 香港 05,🇭🇰 HKG 香港 06,🇭🇰 HKG 香港 07,🇭🇰 HKG 香港 08,🇯🇵 JPN 日本 01,🇯🇵 JPN 日本 02,🇯🇵 JPN 日本 03,🇯🇵 JPN 日本 04,🇯🇵 JPN 日本 05,🇯🇵 JPN 日本 06,🇯🇵 JPN 日本 07,🇯🇵 JPN 日本 08,🇸🇬 SGP 狮城 01,🇸🇬 SGP 狮城 02,🇸🇬 SGP 狮城 03,🇸🇬 SGP 狮城 04,🇸🇬 SGP 狮城 05,🇸🇬 SGP 狮城 06,🇸🇬 SGP 狮城 07,🇸🇬 SGP 狮城 08,🇨🇳 TWN 台湾 01,🇨🇳 TWN 台湾 02,🇺🇸 USA 美国 01,🇺🇸 USA 美国 02,🇺🇸 USA 美国 03,🇺🇸 USA 美国 04,🇺🇸 USA 美国 05,🇺🇸 USA 美国 06,🇺🇸 USA 美国 07,🇺🇸 USA 美国 08,🇬🇧 GBR 英国 01,🇬🇧 GBR 英国 02,🇩🇪 DEU 德国 01,🇩🇪 DEU 德国 02,🇳🇱 NLD 荷兰 01,🇳🇱 NLD 荷兰 02,🇦🇷 ARG 阿根廷 01,🇧🇷 BRA 巴西 01,🇰🇷 KOR 韩国 01,🇰🇷 KOR 韩国 02,🇦🇺 AUS 澳洲 01,🇮🇳 IND 印度 01,🇨🇦 CAN 加拿大 01,🇷🇺 RUS 俄罗斯 01,🇹🇷 TUR 土耳其 01
 YouTube = select,Proxies,HK,JP,SG,TW,US
 Disney = select,Proxies,HK,JP,SG,TW,US
 Hbomax = select,Proxies,HK,JP,SG,TW,US
@@ -789,5 +793,4 @@ JP = select,🇯🇵 JPN 日本 01,🇯🇵 JPN 日本 02,🇯🇵 JPN 日本 03
 SG = select,🇸🇬 SGP 狮城 01,🇸🇬 SGP 狮城 02,🇸🇬 SGP 狮城 03,🇸🇬 SGP 狮城 04,🇸🇬 SGP 狮城 05,🇸🇬 SGP 狮城 06,🇸🇬 SGP 狮城 07,🇸🇬 SGP 狮城 08
 TW = select,🇨🇳 TWN 台湾 01,🇨🇳 TWN 台湾 02
 US = select,🇺🇸 USA 美国 01,🇺🇸 USA 美国 02,🇺🇸 USA 美国 03,🇺🇸 USA 美国 04,🇺🇸 USA 美国 05,🇺🇸 USA 美国 06,🇺🇸 USA 美国 07,🇺🇸 USA 美国 08
-
 
