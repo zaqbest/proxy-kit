@@ -1,0 +1,10 @@
+DOMAIN-SUFFIX,sap,extended-matching
+DOMAIN-SUFFIX,sap.corp,extended-matching
+DOMAIN-SUFFIX,saphttps,extended-matching
+DOMAIN-SUFFIX,sapsf.com,extended-matching
+DOMAIN-SUFFIX,successfactors.com,extended-matching
+DOMAIN-SUFFIX,ondemand.com,extended-matching
+DOMAIN-SUFFIX,gcp.cloud.es.io,extended-matching
+DOMAIN-SUFFIX,splunk.com,extended-matching
+DOMAIN-SUFFIX,elastic-cloud.com,extended-matching
+PROCESS-NAME,"/Applications/Microsoft Teams.app/Contents/MacOS/MSTeams"
