@@ -1,0 +1,3 @@
+DEST-PORT,22,Proxy-Direct
+DOMAIN-SUFFIX,api.linkcube.dev,extended-matching
+DOMAIN-SUFFIX,api-linkcube.net,extended-matching

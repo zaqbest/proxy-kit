@@ -1,0 +1,15 @@
+IP-CIDR,114.247.154.6/32,no-resolve
+DOMAIN-SUFFIX,agilebits.com,extended-matching
+DOMAIN-SUFFIX,1password.com,extended-matching
+DOMAIN-SUFFIX,intel.im,extended-matching
+DOMAIN-SUFFIX,sm.ms,extended-matching
+DOMAIN-SUFFIX,clashofclans.com,extended-matching
+DOMAIN-SUFFIX,cloudflare.com,extended-matching
+DOMAIN-SUFFIX,agilebits.com,extended-matching
+DOMAIN-SUFFIX,ip-api.com,extended-matching
+DOMAIN,cdn.polyfill.io,extended-matching
+DOMAIN-SUFFIX,limbopro.com,extended-matching
+DOMAIN-SUFFIX,webgetstore.com,extended-matching
+DOMAIN-SUFFIX,a2507app.com,extended-matching
+DOMAIN-SUFFIX,h25109.com,extended-matching
+DOMAIN-SUFFIX,66img.cc,extended-matching
