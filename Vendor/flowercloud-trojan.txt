@@ -1,1 +1,834 @@
-YWxsb3dJbnNlY3VyZT0xJnVkcD0xJnBlZXI9bS5jdHJpcC5jb20mc25pPW0uY3RyaXAuY29tI0V4cGlyZSUzQSUyMDIwMjYtMTAtMTQKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMDExMT9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU5JUE2JTk5JUU2JUI4JUFGJUU1JUFFJTlFJUU5JUFBJThDJUU2JTgwJUE3JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMDEyMT9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JTk3JUE1JUU2JTlDJUFDJUU1JUFFJTlFJUU5JUFBJThDJUU2JTgwJUE3JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMDEzMT9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JTk2JUIwJUU1JThBJUEwJUU1JTlEJUExJUU1JUFFJTlFJUU5JUFBJThDJUU2JTgwJUE3JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMDE1MT9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU3JUJFJThFJUU1JTlCJUJEJUU1JUFFJTlFJUU5JUFBJThDJUU2JTgwJUE3JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMjEwMj9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU5JUE2JTk5JUU2JUI4JUFGJUU5JUFCJTk4JUU3JUJBJUE3JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMjEwOT9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU5JUE2JTk5JUU2JUI4JUFGJUU5JUFCJTk4JUU3JUJBJUE3JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDIKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMjEwOD9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU5JUE2JTk5JUU2JUI4JUFGJUU5JUFCJTk4JUU3JUJBJUE3JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDMKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMjExMj9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JTk3JUE1JUU2JTlDJUFDJUU5JUFCJTk4JUU3JUJBJUE3JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMjExOT9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JTk3JUE1JUU2JTlDJUFDJUU5JUFCJTk4JUU3JUJBJUE3JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDIKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMjExOD9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JTk3JUE1JUU2JTlDJUFDJUU5JUFCJTk4JUU3JUJBJUE3JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDMKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMjEzMj9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JTk2JUIwJUU1JThBJUEwJUU1JTlEJUExJUU5JUFCJTk4JUU3JUJBJUE3JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMjEzOT9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JTk2JUIwJUU1JThBJUEwJUU1JTlEJUExJUU5JUFCJTk4JUU3JUJBJUE3JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDIKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMjEzOD9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JTk2JUIwJUU1JThBJUEwJUU1JTlEJUExJUU5JUFCJTk4JUU3JUJBJUE3JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDMKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMjE0Mj9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU1JThGJUIwJUU2JUI5JUJFJUU5JUFCJTk4JUU3JUJBJUE3JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMjE0OT9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU1JThGJUIwJUU2JUI5JUJFJUU5JUFCJTk4JUU3JUJBJUE3JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDIKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMjE0OD9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU1JThGJUIwJUU2JUI5JUJFJUU5JUFCJTk4JUU3JUJBJUE3JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDMKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMjEyMj9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU3JUJFJThFJUU1JTlCJUJEJUU5JUFCJTk4JUU3JUJBJUE3JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMjEyOT9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU3JUJFJThFJUU1JTlCJUJEJUU5JUFCJTk4JUU3JUJBJUE3JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDIKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMjEyOD9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU3JUJFJThFJUU1JTlCJUJEJUU5JUFCJTk4JUU3JUJBJUE3JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDMKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMTEwMj9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU5JUE2JTk5JUU2JUI4JUFGJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMTEwMz9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU5JUE2JTk5JUU2JUI4JUFGJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDIKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMTEwNT9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU5JUE2JTk5JUU2JUI4JUFGJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDMKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMTEwNj9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU5JUE2JTk5JUU2JUI4JUFGJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDQKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMTEwND9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU5JUE2JTk5JUU2JUI4JUFGJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDUKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMTEwOD9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU5JUE2JTk5JUU2JUI4JUFGJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDYKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMTEwMT9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU5JUE2JTk5JUU2JUI4JUFGJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDcKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMTEwNz9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU5JUE2JTk5JUU2JUI4JUFGJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDgKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMTExMj9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JTk3JUE1JUU2JTlDJUFDJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMTExMz9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JTk3JUE1JUU2JTlDJUFDJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDIKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMTExNT9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JTk3JUE1JUU2JTlDJUFDJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDMKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMTExNj9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JTk3JUE1JUU2JTlDJUFDJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDQKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMTExND9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JTk3JUE1JUU2JTlDJUFDJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDUKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMTExOD9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JTk3JUE1JUU2JTlDJUFDJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDYKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMTExMT9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JTk3JUE1JUU2JTlDJUFDJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDcKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMTExNz9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JTk3JUE1JUU2JTlDJUFDJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDgKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMTEzMj9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JTk2JUIwJUU1JThBJUEwJUU1JTlEJUExJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMTEzMz9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JTk2JUIwJUU1JThBJUEwJUU1JTlEJUExJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDIKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMTEzNT9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JTk2JUIwJUU1JThBJUEwJUU1JTlEJUExJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDMKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMTEzNj9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JTk2JUIwJUU1JThBJUEwJUU1JTlEJUExJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDQKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMTEzND9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JTk2JUIwJUU1JThBJUEwJUU1JTlEJUExJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDUKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMTEzOD9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JTk2JUIwJUU1JThBJUEwJUU1JTlEJUExJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDYKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMTEzMT9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JTk2JUIwJUU1JThBJUEwJUU1JTlEJUExJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDcKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMTEzNz9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JTk2JUIwJUU1JThBJUEwJUU1JTlEJUExJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDgKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMTE0MT9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU1JThGJUIwJUU2JUI5JUJFJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMTE0Mz9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU1JThGJUIwJUU2JUI5JUJFJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDIKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMTE0Mj9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU1JThGJUIwJUU2JUI5JUJFJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDMKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMTEyMj9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU3JUJFJThFJUU1JTlCJUJEJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMTEyMz9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU3JUJFJThFJUU1JTlCJUJEJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDIKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMTEyNT9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU3JUJFJThFJUU1JTlCJUJEJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDMKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMTEyNj9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU3JUJFJThFJUU1JTlCJUJEJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDQKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMTEyND9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU3JUJFJThFJUU1JTlCJUJEJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDUKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMTEyOD9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU3JUJFJThFJUU1JTlCJUJEJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDYKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMTEyMT9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU3JUJFJThFJUU1JTlCJUJEJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDcKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMTEyNz9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU3JUJFJThFJUU1JTlCJUJEJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDgKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDJhZDMwYmo2LWZjNTEuYXdzLWFnZW50LmNvbToxMTE1MD9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JTkxJUE5JUU1JUIwJTk0JUU1JUE0JTlBJUU3JTkzJUE2JUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDJhZDMwYmo2LWZjNTEuYXdzLWFnZW50LmNvbToxMTE1MT9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU0JUI5JThDJUU1JTg1JThCJUU1JTg1JUIwJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDJhZDMwYmo2LWZjNTEuYXdzLWFnZW50LmNvbToxMTE1Mj9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JTg0JThGJUU1JUE0JUE3JUU1JTg4JUE5JUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDJhZDMwYmo2LWZjNTEuYXdzLWFnZW50LmNvbToxMTE1Mz9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU1JThDJTg4JUU3JTg5JTk5JUU1JTg4JUE5JUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDJhZDMwYmo2LWZjNTEuYXdzLWFnZW50LmNvbToxMTE1ND9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU4JUE1JUJGJUU3JThGJUFEJUU3JTg5JTk5JUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDJhZDMwYmo2LWZjNTEuYXdzLWFnZW50LmNvbToxMTE1NT9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU1JTlDJTlGJUU4JTgwJUIzJUU1JTg1JUI2JUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDJhZDMwYmo2LWZjNTEuYXdzLWFnZW50LmNvbToxMTE1Nj9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU1JUJFJUI3JUU1JTlCJUJEJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDJhZDMwYmo2LWZjNTEuYXdzLWFnZW50LmNvbToxMTE1Nz9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU1JUJFJUI3JUU1JTlCJUJEJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDIKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDJhZDMwYmo2LWZjNTEuYXdzLWFnZW50LmNvbToxMTE1OD9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU4JThCJUIxJUU1JTlCJUJEJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDJhZDMwYmo2LWZjNTEuYXdzLWFnZW50LmNvbToxMTE1OT9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU4JThCJUIxJUU1JTlCJUJEJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDIKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDJhZDMwYmo2LWZjNTEuYXdzLWFnZW50LmNvbToxMTE2MD9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU4JThEJUI3JUU1JTg1JUIwJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDJhZDMwYmo2LWZjNTEuYXdzLWFnZW50LmNvbToxMTE2MT9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU4JThEJUI3JUU1JTg1JUIwJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDIKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDJhZDMwYmo2LWZjNTEuYXdzLWFnZW50LmNvbToxMTE2Mj9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JUIzJTk1JUU1JTlCJUJEJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDJhZDMwYmo2LWZjNTEuYXdzLWFnZW50LmNvbToxMTE2Mz9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JUIzJTk1JUU1JTlCJUJEJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDIKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMTE2ND9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU1JThBJUEwJUU2JThCJUJGJUU1JUE0JUE3JUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMTE2NT9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU1JThBJUEwJUU2JThCJUJGJUU1JUE0JUE3JUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDIKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMTE2Nj9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU5JTk4JUJGJUU2JUEwJUI5JUU1JUJCJUI3JUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMTE2Nz9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU1JUI3JUI0JUU4JUE1JUJGJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMTE2OD9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JTk5JUJBJUU1JTg4JUE5JUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMTE2OT9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JUJFJUIzJUU1JUE0JUE3JUU1JTg4JUE5JUU0JUJBJTlBJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMTE3MD9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JTk2JUIwJUU4JUE1JUJGJUU1JTg1JUIwJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMTE3MT9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU5JTlGJUE5JUU1JTlCJUJEJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQGZjNTEzc2gyLTZlZDYuYXdzLWFnZW50LmNvbToxMTE3Mj9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU5JTlGJUE5JUU1JTlCJUJEJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDIKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMTE3Mz9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU1JThEJUIwJUU1JUIwJUJDJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMTE3ND9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU2JUIzJUIwJUU1JTlCJUJEJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMTE3NT9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU4JUI2JThBJUU1JThEJTk3JUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMTE4MD9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU1JThEJUIwJUU1JUJBJUE2JUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMTE4MT9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU1JUI3JUI0JUU1JTlGJUJBJUU2JTk2JUFGJUU1JTlEJUE2JUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDJhZDMwYmo2LWZjNTEuYXdzLWFnZW50LmNvbToxMTE4Mj9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU0JUJCJUE1JUU4JTg5JUIyJUU1JTg4JTk3JUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMTE4Mz9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU5JTk4JUJGJUU4JTgxJTk0JUU5JTg1JThCJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMTE4ND9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU4JThGJUIyJUU1JUJFJThCJUU1JUFFJUJFJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDZlZDY4Z3o4LTJhZDMuYXdzLWFnZW50LmNvbToxMTE4NT9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU5JUE5JUFDJUU2JTlEJUE1JUU4JUE1JUJGJUU0JUJBJTlBJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDJhZDMwYmo2LWZjNTEuYXdzLWFnZW50LmNvbToxMTE4Nj9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU1JTlGJTgzJUU1JThGJThBJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEKdHJvamFuOi8vN0IxQjg5RkEtNzY3OS04QkNFLThDMUItODUxNEEwMDlDNUMxQDJhZDMwYmo2LWZjNTEuYXdzLWFnZW50LmNvbToxMTE4Nz9hbGxvd0luc2VjdXJlPTEmdWRwPTEmcGVlcj1tLmN0cmlwLmNvbSZzbmk9bS5jdHJpcC5jb20jJUU1JUIwJUJDJUU2JTk3JUE1JUU1JTg4JUE5JUU0JUJBJTlBJUU2JUEwJTg3JUU1JTg3JTg2JTIwSUVQTCUyMCVFNCVCOCU5MyVFNyVCQSVCRiUyMDEK
+[General]
+dns-server=119.29.29.29,223.5.5.5
+use-local-host-item-for-proxy=true
+bypass-system = true
+skip-proxy = 127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,100.64.0.0/10,17.0.0.0/8,localhost,*.local,passenger.t3go.cn
+bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.0.0.0/24,192.0.2.0/24,192.88.99.0/24,192.168.0.0/16,198.51.100.0/24,203.0.113.0/24,224.0.0.0/4,255.255.255.255/32
+doh-server = https://dns.alidns.com/dns-query, https://doh.pub/dns-query
+hijack-dns = 8.8.8.8:53, 8.8.4.4:53
+loglevel = notify
+replica = false
+tls-provider = default
+show-error-page-for-reject = true
+exclude-simple-hostnames = true
+always-raw-tcp-hosts = www.google.com, 91.108.4.*, 91.108.5.*, 91.108.6.*, 91.108.7.*, 91.108.8.*, 91.108.9.*, 91.108.1*.*, 91.108.5*, 91.108.6*, 91.108.7*, 149.154.16*, 149.154.17*, 185.76.151.*
+always-real-ip = *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com, msftconnecttest.com, msftncsi.com, *.msftconnecttest.com, *.msftncsi.com, *.battlenet.com.cn, *.battlenet.com, *.blzstatic.cn, *.battle.net
+internet-test-url = http://www.aliyun.com
+proxy-test-url = http://www.gstatic.com/generate_204
+# iOS Only
+allow-wifi-access = true
+wifi-access-http-port = 6152
+wifi-access-socks5-port = 6153
+# macOS Only
+http-listen = 0.0.0.0:6152
+socks5-listen = 0.0.0.0:6153
+enhanced-mode-by-rule = false
+
+[SSID Setting]
+TYPE:CELLULAR tfo-behaviour=force-enabled, cellular-fallback=off
+TYPE:WIFI tfo-behaviour=force-enabled, cellular-fallback=off
+
+[Rule]
+# Proxy
+PROCESS-NAME,v2ray,DIRECT
+PROCESS-NAME,ss-local,DIRECT
+
+# YouTube UDP REJECT
+AND,((PROTOCOL,UDP),(DEST-PORT,443)),REJECT-NO-DROP
+
+# Zhihu
+DOMAIN,appcloud.zhihu.com,REJECT
+DOMAIN,appcloud2.in.zhihu.com,REJECT
+DOMAIN,crash2.zhihu.com,REJECT
+DOMAIN,mqtt.zhihu.com,REJECT
+DOMAIN,sugar.zhihu.com,REJECT
+URL-REGEX,^https?:\/\/api\.zhihu\.com\/brand\/question\/\d+/card\?,REJECT
+URL-REGEX,^https?:\/\/api\.zhihu\.com\/commercial_api\/launch_v2\?,REJECT
+URL-REGEX,^https?:\/\/api\.zhihu\.com\/commercial_api\/real_time_launch_v2\?,REJECT
+URL-REGEX,^https?:\/\/www\.zhihu\.com\/api\/v\d+\/brand\/question/\d+/card\?,REJECT
+
+RULE-SET,https://api-huacloud.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9VbmJyZWFrLmxpc3Q,DIRECT,update-interval=86400
+RULE-SET,https://api-huacloud.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9TdHJlYW1pbmdNZWRpYS9WaWRlby9Zb3VUdWJlLmxpc3Q,YouTube,update-interval=86400
+RULE-SET,https://api-huacloud.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9TdHJlYW1pbmdNZWRpYS9WaWRlby9EaXNuZXlQbHVzLmxpc3Q,Disney,update-interval=86400
+RULE-SET,https://api-huacloud.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9TdHJlYW1pbmdNZWRpYS9WaWRlby9IQk8tVVNBLmxpc3Q,Hbomax,update-interval=86400
+RULE-SET,https://api-huacloud.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9TdHJlYW1pbmdNZWRpYS9WaWRlby9OZXRmbGl4Lmxpc3Q,Netflix,update-interval=86400
+RULE-SET,https://api-huacloud.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9TdHJlYW1pbmdNZWRpYS9WaWRlby9CYWhhbXV0Lmxpc3Q,Bahamut,update-interval=86400
+RULE-SET,https://api-huacloud.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9TdHJlYW1pbmdNZWRpYS9TdHJlYW1pbmdTRS5saXN0,Bilibili,update-interval=86400
+RULE-SET,https://api-huacloud.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9TdHJlYW1pbmdNZWRpYS9NdXNpYy9TcG90aWZ5Lmxpc3Q,Spotify,update-interval=86400
+RULE-SET,https://api-huacloud.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9FeHRyYS9HYW1lL1N0ZWFtLmxpc3Q,Steam,update-interval=86400
+RULE-SET,https://api-huacloud.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9FeHRyYS9UZWxlZ3JhbS9UZWxlZ3JhbS5saXN0,Telegram,update-interval=86400
+RULE-SET,https://api-huacloud.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9FeHRyYS9Hb29nbGUvR29vZ2xlLmxpc3Q,Google,update-interval=86400
+RULE-SET,https://api-huacloud.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9FeHRyYS9NaWNyb3NvZnQvTWljcm9zb2Z0Lmxpc3Q,Microsoft,update-interval=86400
+RULE-SET,https://api-huacloud.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9FeHRyYS9PcGVuQUkvT3BlbkFJLmxpc3Q,OpenAI,update-interval=86400
+RULE-SET,https://api-huacloud.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9FeHRyYS9QYXlQYWwubGlzdA,PayPal,update-interval=86400
+RULE-SET,https://api-huacloud.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9FeHRyYS9BcHBsZS9BcHBsZS5saXN0,Apple,update-interval=86400
+RULE-SET,https://api-huacloud.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9HbG9iYWwubGlzdA,Proxies,update-interval=86400
+RULE-SET,https://api-huacloud.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9TdHJlYW1pbmdNZWRpYS9WaWRlby9QaXhpdi5saXN0,JP,update-interval=86400
+RULE-SET,https://api-huacloud.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9DaGluYS5saXN0,DIRECT,update-interval=86400
+RULE-SET,https://api-huacloud.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9Mb2NhbEFyZWFOZXR3b3JrLmxpc3Q,DIRECT,update-interval=86400
+GEOIP,CN,DIRECT
+FINAL,Final
+
+[URL Rewrite]
+# AbeamTV Unlock
+^https?:\/\/api\.[\w-]+\.abema-tv\.com\/v\d\/ip\/check - reject
+^https?:\/\/api\.abema\.io\/v\d\/ip\/check - reject
+
+# Redirect Google Service
+^https?:\/\/(www.)?g\.cn https://www.google.com 302
+^https?:\/\/(www.)?google\.cn https://www.google.com 302
+
+# Redirect HTTP to HTTPS
+^https?:\/\/(www.)?taobao\.com\/ https://www.taobao.com/ 302
+^https?:\/\/(www.)?jd\.com\/ https://www.jd.com/ 302
+^https?:\/\/(www.)?mi\.com\/ https://www.mi.com/ 302
+^https?:\/\/you\.163\.com\/ https://you.163.com/ 302
+^https?:\/\/(www.)?suning\.com/ https://suning.com/ 302
+^https?:\/\/(www.)?yhd\.com https://yhd.com/ 302
+
+# Redirect False to True
+# >> IGN China to IGN Global
+^https?:\/\/(www.)?ign\.xn--fiqs8s\/ http://cn.ign.com/ccpref/us 302
+# >> Fake Website Made By Makeding
+^https?:\/\/(www.)?abbyychina\.com\/ http://www.abbyy.cn/ 302
+^https?:\/\/(www.)?bartender\.cc\/ https://cn.seagullscientific.com 302
+^https?:\/\/(www.)?betterzip\.net\/ https://macitbetter.com/ 302
+^https?:\/\/(www.)?beyondcompare\.cc\/ https://www.scootersoftware.com/ 302
+^https?:\/\/(www.)?bingdianhuanyuan\.cn\/ http://www.faronics.com/zh-hans/ 302
+^https?:\/\/(www.)?chemdraw\.com\.cn\/ http://www.cambridgesoft.com/ 302
+^https?:\/\/(www.)?codesoftchina\.com\/ https://www.teklynx.com/ 302
+^https?:\/\/(www.)?coreldrawchina\.com\/ https://www.coreldraw.com/cn/ 302
+^https?:\/\/(www.)?crossoverchina\.com\/ https://www.codeweavers.com/ 302
+^https?:\/\/(www.)?easyrecoverychina\.com\/ https://www.ontrack.com/ 302
+^https?:\/\/(www.)?ediuschina\.com\/ https://www.grassvalley.com/ 302
+^https?:\/\/(www.)?flstudiochina\.com\/ https://www.image-line.com/flstudio/ 302
+^https?:\/\/(www.)?formysql\.com\/ https://www.navicat.com.cn 302
+^https?:\/\/(www.)?guitarpro\.cc\/ https://www.guitar-pro.com/ 302
+^https?:\/\/(www.)?huishenghuiying\.com\.cn\/ https://www.corel.com/cn/ 302
+^https?:\/\/(www.)?iconworkshop\.cn\/ https://www.axialis.com/iconworkshop/ 302
+^https?:\/\/(www.)?imindmap\.cc\/ https://imindmap.com/zh-cn/ 302
+^https?:\/\/(www.)?jihehuaban\.com\.cn\/ https://sketch.io/ 302
+^https?:\/\/(www.)?keyshot\.cc\/ https://www.keyshot.com/ 302
+^https?:\/\/(www.)?mathtype\.cn\/ http://www.dessci.com/en/products/mathtype/ 302
+^https?:\/\/(www.)?mindmanager\.cc\/ https://www.mindjet.com/ 302
+^https?:\/\/(www.)?mindmapper\.cc\/ https://mindmapper.com 302
+^https?:\/\/(www.)?mycleanmymac\.com\/ https://macpaw.com/cleanmymac 302
+^https?:\/\/(www.)?nicelabel\.cc\/ https://www.nicelabel.com/ 302
+^https?:\/\/(www.)?ntfsformac\.cc\/ https://www.tuxera.com/products/tuxera-ntfs-for-mac-cn/ 302
+^https?:\/\/(www.)?ntfsformac\.cn\/ https://www.paragon-software.com/ufsdhome/zh/ntfs-mac/ 302
+^https?:\/\/(www.)?overturechina\.com\/ https://sonicscores.com/overture/ 302
+^https?:\/\/(www.)?passwordrecovery\.cn\/ https://cn.elcomsoft.com/aopr.html 302
+^https?:\/\/(www.)?pdfexpert\.cc\/ https://pdfexpert.com/zh 302
+^https?:\/\/(www.)?ultraiso\.net\/ https://cn.ezbsystems.com/ultraiso/ 302
+^https?:\/\/(www.)?vegaschina\.cn\/ https://www.vegas.com/ 302
+^https?:\/\/(www.)?xmindchina\.net\/ https://www.xmind.cn/ 302
+^https?:\/\/(www.)?xshellcn\.com\/ https://www.netsarang.com/products/xsh_overview.html 302
+^https?:\/\/(www.)?yuanchengxiezuo\.com\/ https://www.teamviewer.com/zhcn/ 302
+^https?:\/\/(www.)?zbrushcn\.com\/ http://pixologic.com/ 302
+^https://aweme-eagle(.*)\.snssdk\.com/aweme/v2/ https://aweme-eagle$1.snssdk.com/aweme/v1/ 302
+
+# JD Protection
+^https?:\/\/coupon\.m\.jd\.com\/ https://coupon.m.jd.com/ 302
+^https?:\/\/h5\.m\.jd\.com\/ https://h5.m.jd.com/ 302
+^https?:\/\/item\.m\.jd\.com\/ https://item.m.jd.com/ 302
+^https?:\/\/m\.jd\.com\/ https://m.jd.com/ 302
+^https?:\/\/newcz\.m\.jd\.com\/ https://newcz.m.jd.com/ 302
+^https?:\/\/p\.m\.jd\.com\/ https://p.m.jd.com/ 302
+^https?:\/\/so\.m\.jd\.com\/ https://so.m.jd.com/ 302
+^https?:\/\/union\.click\.jd\.com\/jda? http://union.click.jd.com/jda?adblock= header
+^https?:\/\/union\.click\.jd\.com\/sem.php? http://union.click.jd.com/sem.php?adblock= header
+^https?:\/\/www.jd.com\/ https://www.jd.com/ 302
+
+# Wiki
+# ^https://zh.(m.)?wikipedia.org/zh(-\w*)?(?=/) https://www.wikiwand.com/zh$2 302
+# ^https://(\w*).(m.)?wikipedia.org/wiki https://www.wikiwand.com/$1 302
+
+# Resso
+
+(?<=(carrier|account|sys|sim)_region=)cn in 307
+
+# Advertising Block
+
+# >> 2048Puzzle
+^https?:\/\/a\.applovin\.com\/3\.0\/ad - reject
+
+# >> 4gTV
+^https?:\/\/service\.4gtv\.tv\/4gtv\/Data\/GetAD - reject
+^https?:\/\/service\.4gtv\.tv\/4gtv\/Data\/ADLog - reject
+
+# >> 58
+^https?:\/\/.+\.58cdn\.com\.cn\/brandads\/ - reject
+^https?:\/\/app\.58\.com\/api\/home\/advertising\/ - reject
+^https?:\/\/app\.58\.com\/api\/home\/appadv\/ - reject
+^https?:\/\/app\.58\.com\/api\/home\/invite\/popupAdv - reject
+^https?:\/\/app\.58\.com\/api\/log\/ - reject
+
+# >> AcFun
+^https?:\/\/aes\.acfun\.cn\/s\?adzones - reject
+
+# >> Ai NanNing
+^https?:\/\/nnapp\.cloudbae\.cn\/mc\/api\/advert/ - reject
+
+# >> Aihuishou
+^https?:\/\/gw\.aihuishou\.com\/app-portal\/home\/getadvertisement - reject
+
+# >> AMap
+^https?:\/\/m\d{1}\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/ - reject
+
+# >> Baicizhan
+^https?:\/\/7n\.bczcdn\.com\/launchad\/ - reject
+
+# >> Baidu
+^https?:\/\/.+\/client\/phpui2\/ - reject
+^https?:\/\/cover.baidu.com\/cover\/page\/dspSwitchAds\/ - reject
+^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule - reject
+^https?:\/\/issuecdn\.baidupcs\.com\/issue\/netdisk\/guanggao\/ - reject
+^https?:\/\/update\.pan\.baidu\.com\/statistics - reject
+
+# >> Baobao
+^https?:\/\/www\.myhug\.cn\/ad\/ - reject
+
+# >> Beike Zhaofang
+^https?:\/\/app\.api\.ke\.com\/config\/config\/bootpage - reject
+
+# >> Beitaicuhfang
+^https?:\/\/channel\.beitaichufang\.com\/channel\/api\/v\d\/promote\/ios\/start\/page - reject
+
+# >> Bi ShiJie
+^https?:\/\/iapi\.bishijie\.com\/actopen\/advertising\/ - reject
+
+# >> Bilibili
+^https?:\/\/app\.bilibili\.com\/x\/v\d\/splash\/ - reject
+
+# >> ByteDance
+^https?:\/\/.+\.(musical|snssdk)\.(com|ly)\/(api|motor)\/ad\/ - reject
+^https?:\/\/.+\.pstatp\.com\/img\/ad - reject
+^https?:\/\/.+\.snssdk\.com\/motor\/operation\/activity\/display\/config\/v\d\/ - reject
+^https?:\/\/dsp\.toutiao\.com\/api\/xunfei\/ads\/ - reject
+
+# >> CamScanner
+^https?:\/\/api\.intsig\.net\/user\/cs\/operating\/app\/get_startpic\/ - reject
+
+# >> Caocao Chuxin
+^https?:\/\/cap\.caocaokeji\.cn\/advert-bss\/ - reject
+
+# >> Chelaile
+^https?:\/\/(api|atrace)\.chelaile\.net\.cn\/adpub\/ - reject
+^https?:\/\/api\.chelaile\.net\.cn\/goocity\/advert\/ - reject
+^https?:\/\/atrace\.chelaile\.net\.cn\/exhibit\?&adv_image - reject
+^https?:\/\/pic1\.chelaile\.net\.cn\/adv\/ - reject
+
+# >> ChinaMobile
+^https?:\/\/app\.10086\.cn\/biz-orange\/DN\/(findSale|homeSale)\/getsaleAdver - reject
+
+# >> ChinaUnicom
+^https?:\/\/m\.client\.10010\.com\/mobileService\/customer\/accountListData\.htm - reject
+^https?:\/\/m\.client\.10010\.com\/uniAdmsInterface\/(getWelcomeAd|getHomePageAd) - reject
+
+# >> CNTV
+^https?:\/\/asp\.cntv\.myalicdn\.com\/.+\?maxbr=850 - reject
+^https?:\/\/cntv\.hls\.cdn\.myqcloud\.com\/.+\?maxbr=850 - reject
+^https?:\/\/v\.cctv\.com\/.+850 - reject
+^https?:\/\/www\.cntv\.cn\/nettv\/adp\/ - reject
+
+# >> DanDan Zan
+^https?:\/\/www\.dandanzan\.com\/res\/gdsefse\.js - reject
+
+# >> DangDang
+^https?:\/\/mapi\.dangdang\.com\/index\.php\?action=init - reject
+
+# >> DayDayCook
+^https?:\/\/api\.daydaycook\.com\.cn\/daydaycook\/server\/ad\/ - reject
+^https?:\/\/cms\.daydaycook\.com\.cn\/api\/cms\/advertisement\/ - reject
+
+# >> eLong
+^https?:\/\/mobile-api2011\.elong\.com\/(adgateway|adv)\/ - reject
+^https?:\/\/(2(5[0-5]{1}|[0-4]\d{1})|[0-1]?\d{1,2})(\.(2(5[0-5]{1}|[0-4]\d{1})|[0-1]?\d{1,2})){3}\/(adgateway|adv)\/ - reject
+
+# >> Facebook
+^https?:\/\/www\.facebook\.com\/.+video_click_to_advertiser_site - reject
+
+# >> Fliggy
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources\/ - reject
+
+# >> Flyer Tea
+^https?:\/\/www\.flyertea\.com\/source\/plugin\/mobile\/mobile\.php\?module=advis - reject
+
+# >> Foodie
+^https?:\/\/foodie-api\.yiruikecorp\.com\/v\d\/(banner|notice)\/overview - reject
+
+# >> FOTOABLE
+^https?:\/\/cdn\.api\.fotoable\.com\/Advertise\/ - reject
+
+# >> Gofun
+^https?:\/\/gateway\.shouqiev\.com\/fsda\/app\/bootImage\.json - reject
+
+# >> Google
+^https?:\/\/.+\.youtube\.com\/api\/stats\/.+adformat - reject
+^https?:\/\/.+\.youtube\.com\/api\/stats\/ads - reject
+^https?:\/\/.+\.youtube\.com\/get_midroll - reject
+^https?:\/\/.+\.youtube\.com\/get_midroll_ - reject
+^https?:\/\/.+\.youtube\.com\/pagead\/ - reject
+^https?:\/\/.+\.youtube\.com\/ptracking - reject
+^https?:\/\/.+\.youtube\.com\/ptracking\? - reject
+^https?:\/\/pagead2.googlesyndication.com\/pagead\/js\/? - reject
+^https?:\/\/pagead2.googlesyndication.com\/pagead\/js\/? - reject
+^https?:\/\/premiumyva\.appspot\.com\/vmclickstoadvertisersite - reject
+^https?:\/\/www.google-analytics.com\/analytics.js - reject
+^https?:\/\/www.google-analytics.com\/analytics.js - reject
+^https?:\/\/youtubei\.googleapis\.com/.+ad_break - reject
+^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+ad_ - reject
+^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+log_ - reject
+
+# >> Hangzhou Bus
+^https?:\/\/m\.ibuscloud.com\/v\d\/app\/getStartPage - reject
+
+# >> Hangzhou Citizen Card
+^https?:\/\/smkmp\.96225.com\/smkcenter\/ad/ - reject
+
+# >> Hupu
+^https?:\/\/games\.mobileapi\.hupu\.com\/.+\/(interfaceAdMonitor|interfaceAd)\/ - reject
+^https?:\/\/games\.mobileapi\.hupu\.com\/.+\/status\/init - reject
+
+# >> IdleFish
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.home\.welcome\/ - reject
+
+# >> iFlytek
+^https?:\/\/imeclient\.openspeech\.cn\/adservice\/ - reject
+
+# >> iQiyi
+^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show.do - reject
+^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v\d\/show - reject
+^https?:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo - reject
+^https?:\/\/t7z\.cupid\.iqiyi\.com\/mixer\? - reject
+
+# >> JD
+^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ - reject
+^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start - reject
+^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/base\/na\/m\/adInfo - reject
+
+# >> Jiemian
+^https?:\/\/img\.jiemian\.com\/ads\/ - reject
+
+# >> JXEDT
+^https?:\/\/api\.jxedt\.com\/ad\/ - reject
+^https?:\/\/richmanapi\.jxedt\.com\/api\/ad\/ - reject
+
+# >> Keep
+^https?:\/\/static1\.keepcdn\.com\/.+\d{3}x\d{4} - reject
+^https?:\/\/api\.gotokeep\.com\/ads\/ - reject
+
+# >> KFC
+^https?:\/\/res\.kfc\.com\.cn\/advertisement\/ - reject
+
+# >> Kingsoft
+^https?:/\/\counter\.ksosoft.com\/ad\.php - reject
+^https?:\/\/.+\.kingsoft-office-service\.com\/ad - reject
+^https?:\/\/counter\.ksosoft\.com\/ad\.php - reject
+^https?:\/\/dict-mobile\.iciba\.com\/interface\/index\.php\?.+(c=ad|collectFeedsAdShowCount|KSFeedsAdCardViewController) - reject
+^https?:\/\/ios\.wps\.cn\/ad-statistics-service - reject
+^https?:\/\/mobile-pic\.cache\.iciba\.com\/feeds_ad\/ - reject
+^https?:\/\/service\.iciba\.com\/popo\/open\/screens\/v\d\?adjson - reject
+
+# >> KouBei
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.o2o\.ad\.gateway\.get\/ - reject
+^https?:\/\/render\.alipay\.com\/p\/s\/h5data\/prod\/spring-festival-2019-h5data\/popup-h5data\.json - reject
+
+# >> Kuaikan Comic
+^https?:\/\/api\.kkmh\.com\/.+(ad|advertisement)\/ - reject
+
+# >> Kuwo
+^https?:\/\/(2(5[0-5]{1}|[0-4]\d{1})|[0-1]?\d{1,2})(\.(2(5[0-5]{1}|[0-4]\d{1})|[0-1]?\d{1,2})){3}\/EcomResourceServer/AdPlayPage/adinfo - reject
+^https?:\/\/(2(5[0-5]{1}|[0-4]\d{1})|[0-1]?\d{1,2})(\.(2(5[0-5]{1}|[0-4]\d{1})|[0-1]?\d{1,2})){3}\/MobileAdServer\/ - reject
+
+# >> Le
+^https?:\/\/.+\/letv-gug\/ - reject
+
+# >> Luckin Coffee
+^https?:\/\/.+\/resource\/m\/promo\/adsense - reject
+^https?:\/\/.+\/resource\/m\/sys\/app\/adpos - reject
+
+# >> MaFengWo
+^https?:\/\/mapi\.mafengwo\.cn\/ad\/ - reject
+^https?:\/\/mapi\.mafengwo\.cn\/travelguide\/ad\/ - reject
+
+# >> Mahua Video
+^https?:\/\/.+\/api\/app\/member\/ver2\/user\/login\/ - reject
+
+
+# >> Maiduidui
+^https?:\/\/mob\.mddcloud\.com\.cn\/api\/(ad|advert)\/ - reject
+
+# >> Manhuaren
+^https?:\/\/mangaapi\.manhuaren\.com\/v\d\/public\/getStartPageAds - reject
+
+
+# >> Meituan
+^https?:\/\/img\.meituan\.net\/midas\/ - reject
+^https?:\/\/p([0-9])\.meituan\.net\/(mmc|wmbanner)\/ - reject
+^https?:\/\/p\d{1}\.meituan\.net\/(adunion|display|linglong|mmc|wmbanner)\/ - reject
+^https?:\/\/s3plus\.meituan\.net\/.+\/linglong\/ - reject
+
+# >> Meiweibuyongdeng
+^https?:\/\/capi.mwee.cn/app-api/V12/app/getstartad - reject
+
+# >> MI
+^https?:\/\/api\.m\.mi\.com\/v\d\/app\/start - reject
+^https?:\/\/api\.jr\.mi\.com\/v\d\/adv\/ - reject
+^https?:\/\/api\.jr\.mi\.com\/jr\/api\/playScreen - reject
+
+# >> MI Fit
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/homepage_ad\? - reject
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sleep_ad\? - reject
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_ad\? - reject
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_summary_ad\? - reject
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_training_ad\? - reject
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/step_detail_ad\? - reject
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/training_video_ad\? - reject
+
+# >> Miaopai
+^https?:\/\/b-api\.ins\.miaopai\.com\/1\/ad/ - reject
+
+# >> MIgu
+^https?:\/\/.+\/v\d\/iflyad\/ - reject
+^https?:\/\/.+\/cdn-adn\/ - reject
+^https?:\/\/ggic\.cmvideo\.cn\/ad\/ - reject
+^https?:\/\/ggic2\.cmvideo\.cn\/ad\/ - reject
+^https?:\/\/.+/img\/ad\.union\.api\/ - reject
+
+# >> MixC
+^https?:\/\/app\.mixcapp\.com\/mixc\/api\/v\d\/ad - reject
+
+# >> MogoRenter
+^https?:\/\/api\.mgzf\.com\/renter-operation\/home\/startHomePage - reject
+
+# >> MojiWeather
+^https?:\/\/cdn\.moji\.com\/(adoss|adlink)\/ - reject
+
+# >> Myhug
+^https?:\/\/www\.myhug\.cn\/ad\/ - reject
+
+# >> NationalGeographic
+^https?:\/\/dili\.bdatu\.com\/jiekou\/ad\/ - reject
+
+# >> NationalGeographicChina
+^https?:\/\/wap\.ngchina\.cn\/news\/adverts\/ - reject
+
+# >> NetEase
+^https?:\/\/.+\/eapi\/(ad|log)\/ - reject
+^https?:\/\/client\.mail\.163\.com\/apptrack\/confinfo\/searchMultiAds - reject
+^https?:\/\/c\.m\.163\.com\/nc\/gl\/ - reject
+^https?:\/\/dsp-impr2\.youdao\.com\/adload.s\? - reject
+^https?:\/\/oimage([a-z])([0-9])\.ydstatic\.com\/.+adpublish - reject
+^https?:\/\/sp\.kaola\.com\/api\/openad - reject
+^https?:\/\/support\.you\.163\.com\/xhr\/boot\/getBootMedia\.json - reject
+
+# >> ofo
+^https?:\/\/supportda\.ofo\.com\/adaction\? - reject
+^https?:\/\/ma\.ofo\.com\/ads\/ - reject
+^https?:\/\/activity2\.api\.ofo\.com\/ofo\/Api\/v\d\/ads - reject
+^https?:\/\/ma\.ofo\.com\/adImage\/ - reject
+
+# >> PConline
+^https?:\/\/agent-count\.pconline\.com\.cn\/counter\/adAnalyse\/ - reject
+^https?:\/\/mrobot\.pcauto\.com\.cn\/v\d\/ad2p - reject
+^https?:\/\/mrobot\.pcauto\.com\.cn\/xsp\/s\/auto\/info\/preload\.xsp - reject
+^https?:\/\/mrobot\.pconline\.com\.cn\/s\/onlineinfo\/ad\/ - reject
+^https?:\/\/mrobot\.pconline\.com\.cn\/v\d\/ad2p - reject
+
+# >> PeanutWiFiMpass
+^https?:\/\/cmsapi\.wifi8\.com\/v\d{1}\/(emptyAd|adNew)\/ - reject
+
+# >> Qdaily
+^https?:\/\/app3\.qdaily\.com\/app3\/boot_advertisements\.json - reject
+^https?:\/\/notch\.qdaily\.com\/api\/v\d\/boot_ad - reject
+
+# >> Qiongou
+^https?:\/\/media\.qyer\.com\/ad\/ - reject
+^https?:\/\/open\.qyer.com\/qyer\/config\/get - reject
+^https?:\/\/open\.qyer\.com\/qyer\/startpage\/ - reject
+
+# >> Qiuduoduo
+^https?:\/\/api\.qiuduoduo\.cn\/guideimage - reject
+
+# >> Renren Video
+^https?:\/\/api\.rr\.tv\/ad\/ - reject
+^https?:\/\/api\.videozhishi\.com\/api\/getAdvertising - reject
+^https?:\/\/msspjh\.emarbox\.com\/getAdConfig - reject
+
+# >> ShiHuo
+^https?:\/\/www\.shihuo\.cn\/app3\/saveAppInfo - reject
+
+# >> 首汽约车
+^https?:\/\/gw-passenger\.01zhuanche\.com\/gw-passenger\/car-rest\/webservice\/passenger\/recommendADs - reject
+^https?:\/\/gw-passenger\.01zhuanche\.com\/gw-passenger\/zhuanche-passenger-token\/leachtoken\/webservice\/homepage\/queryADs - reject
+
+# >> Sina
+^https?:\/\/edit\.sinaapp\.com\/ua\?t=adv - reject
+
+# >> Sina Weather
+^https?:\/\/tqt\.weibo\.cn\/.+advert\.index - reject
+^https?:\/\/tqt\.weibo\.cn\/api\/advert\/ - reject
+^https?:\/\/tqt\.weibo\.cn\/overall\/redirect\.php\?r=tqtad - reject
+^https?:\/\/tqt\.weibo\.cn\/overall\/redirect\.php\?r=tqt_sdkad - reject
+
+# >> Sina Weibo
+^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkad\.php - reject
+^https?:\/\/wbapp\.uve\.weibo\.com\/wbapplua\/wbpullad\.lua - reject
+^https?:\/\/sdkapp\.uve\.weibo\.com/\interface\/sdk\/actionad\.php - reject
+
+# >> SMZDM
+^https?:\/\/api\.smzdm\.com\/v\d\/util\/loading - reject
+
+# >> Snail Sleep
+^https?:\/\/snailsleep\.net\/snail\/v\d\/adTask\/ - reject
+^https?:\/\/snailsleep\.net\/snail\/v\d\/screen\/qn\/get\? - reject
+
+# >> Sohu
+^https?:\/\/api\.k\.sohu\.com\/api\/news\/adsense - reject
+^https?:\/\/api\.tv\.sohu\.com\/agg\/api\/app\/config\/bootstrap - reject
+^https?:\/\/hui\.sohu\.com\/predownload2/\? - reject
+^https?:\/\/pic\.k\.sohu\.com\/img8\/wb\/tj\/ - reject
+^https?:\/\/s1\.api\.tv\.itc\.cn\/v\d\/mobile\/control\/switch\.json - reject
+
+# >> StarFans
+^https?:\/\/a\.sfansclub\.com\/business\/t\/ad\/ - reject
+^https?:\/\/a\.sfansclub\.com\/business\/t\/boot\/screen\/index - reject
+
+# >> TaPiaoPiao
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryadvertise\/ - reject
+
+# >> Tencent Futu Securities
+^https?:\/\/api5\.futunn\.com\/ad\/ - reject
+
+# >> Tencent Game
+^https?:\/\/qt\.qq\.com\/lua\/mengyou\/get_splash_screen_info - reject
+^https?:\/\/ssl\.kohsocialapp\.qq\.com:10001\/game\/buttons - reject
+
+# >> Tencent Maps
+^https?:\/\/3gimg\.qq\.com\/tencentMapTouch\/app\/activity\/ - reject
+^https?:\/\/newsso\.map\.qq\.com\/\?&attime= - reject
+
+# >> Tencent News
+^https?:\/\/r\.inews\.qq\.com\/adsBlacklist - reject
+^https?:\/\/r\.inews\.qq\.com\/getFullScreenPic - reject
+^https?:\/\/r\.inews\.qq\.com\/getQQNewsRemoteConfig - reject
+
+# >> Tencent QQLive
+^https?:\/\/.+\.mp4\?cdncode=.+&guid= - reject
+^https?:\/\/.+\.mp4\?cdncode=.+&sdtfrom=v3004 - reject
+^https?:\/\/btrace.qq.com - reject
+^https?:\/\/vv\.video\.qq\.com\/getvmind\? - reject
+
+# >> Tencent WeChat
+^https?:\/\/mp\.weixin\.qq.com\/mp\/advertisement_report - reject
+^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_complaint - reject
+^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_video - reject
+
+# >> The Paper
+^https?:\/\/adpai\.thepaper\.cn\/.+&ad= - reject
+
+# >> Thunder
+^https?:\/\/images\.client\.vip\.xunlei\.com\/.+\/advert\/ - reject
+
+# >> tskscn
+^https?:\/\/47\.97\.20\.12\/ad\/ - reject
+
+# >> TV_Home
+^https?:\/\/api\.gaoqingdianshi\.com\/api\/v\d\/ad\/ - reject
+
+# >> txffp
+^https?:\/\/pss\.txffp\.com\/piaogen\/images\/launchScreen/ - reject
+
+# >> UC
+^https?:\/\/huichuan\.sm\.cn\/jsad - reject
+^https?:\/\/iflow\.uczzd\.cn\/log\/ - reject
+
+# >> Variflight
+^https:\/\/app\.variflight\.com\/v4\/advert\/ - reject
+
+# >> VUE
+^https?:\/\/static\.vuevideo\.net\/styleAssets\/.+\/splash_ad - reject
+^https?:\/\/static\.vuevideo\.net\/styleAssets\/advertisement\/ - reject
+
+# >> WallStreetCN
+^https?:\/\/api\.wallstreetcn\.com\/apiv\d\/advertising\/ - reject
+
+# >> WeDoctor
+^https?:\/\/app\.wy\.guahao\.com\/json\/white\/dayquestion\/getpopad - reject
+
+# >> Weico
+^https?:\/\/overseas\.weico\.cc/portal\.php\?a=get_coopen_ads - reject
+
+# >> WeiDian
+^https?:\/\/thor\.weidian\.com\/ares\/home\.splash\/ - reject
+
+# >> WiFi Share Master
+^https?:\/\/nochange\.ggsafe\.com\/ad\/ - reject
+
+# >> WIFI8
+^https?:\/\/cmsapi\.wifi8\.com\/v\d\/emptyAd\/info - reject
+^https?:\/\/cmsapi\.wifi8\.com\/v\d\/adNew\/config - reject
+
+# >> Wuta Cam
+^https?:\/\/api-release\.wuta-cam\.com\/ad_tree - reject
+^https?:\/\/res-release\.wuta-cam\.com\/json\/ads_component_cache\.json - reject
+
+# >> Xiachufang
+^https?:\/\/api\.xiachufang\.com\/v\d\/ad/ - reject
+
+# >> Xiami music
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimusic\.common\.mobileservice\.startinit\/ - reject
+
+# >> Xianyu
+^https?:\/\/gw\.alicdn\.com\/mt\/ - reject
+^https?:\/\/gw\.alicdn\.com\/tfs\/.+\d{3,4}-\d{4} - reject
+^https?:\/\/gw\.alicdn\.com\/tps\/.+\d{3,4}-\d{4} - reject
+
+# >> Xiao Shuimian
+^https?:\/\/api\.psy-1\.com\/cosleep\/startup - reject
+
+# >> Ximalaya
+^https?:\/\/adse.+\.com\/[a-z]{4}\/loading\?appid= - reject
+^https?:\/\/adse\.ximalaya\.com\/ting\/feed\?appid= - reject
+^https?:\/\/adse\.ximalaya\.com\/ting\/loading\?appid= - reject
+^https?:\/\/adse\.ximalaya\.com\/ting\?appid= - reject
+^https?:\/\/fdfs\.xmcdn\.com\/group21\/M03\/E7\/3F\/ - reject
+^https?:\/\/fdfs\.xmcdn\.com\/group21\/M0A\/95\/3B\/ - reject
+^https?:\/\/fdfs\.xmcdn\.com\/group22\/M00\/92\/FF\/ - reject
+^https?:\/\/fdfs\.xmcdn\.com\/group22\/M05\/66\/67\/ - reject
+^https?:\/\/fdfs\.xmcdn\.com\/group22\/M07\/76\/54\/ - reject
+^https?:\/\/fdfs\.xmcdn\.com\/group23\/M01\/63\/F1\/ - reject
+^https?:\/\/fdfs\.xmcdn\.com\/group23\/M04\/E5\/F6\/ - reject
+^https?:\/\/fdfs\.xmcdn\.com\/group23\/M07\/81\/F6\/ - reject
+^https?:\/\/fdfs\.xmcdn\.com\/group23\/M0A\/75\/AA\/ - reject
+^https?:\/\/fdfs\.xmcdn\.com\/group24\/M03\/E6\/09\/ - reject
+^https?:\/\/fdfs\.xmcdn\.com\/group24\/M07\/C4\/3D\/ - reject
+^https?:\/\/fdfs\.xmcdn\.com\/group25\/M05\/92\/D1\/ - reject
+
+# >> Xunyou Booster
+^https?:\/\/portal-xunyou\.qingcdn\.com\/api\/v\d\/ios\/configs\/(splash_ad|ad_urls) - reject
+^https?:\/\/portal-xunyou\.qingcdn\.com\/api\/v\d{1}\/ios\/ads\/ - reject
+
+# >> Yahoo!
+^https?:\/\/m\.yap\.yahoo\.com\/v18\/getAds\.do - reject
+
+# >> Yingshi Cloud Video
+^https?:\/\/i\.ys7\.com\/api\/ads - reject
+
+# >> YOUKU
+^https?:\/\/.+\.mp4\?ccode=0902 - reject
+^https?:\/\/.+\.mp4\?sid= - reject
+
+# >> Youtube++
+^https?:\/\/api\.catch\.gift\/api\/v\d\/pagead\/ - reject
+
+# >> Yundongshijie
+^https?:\/\/.+\.iydsj\.com\/api\/.+\/ad - reject
+
+# >> YYeTs
+^https?:\/\/ctrl\.(playcvn|zmzapi)\.(com|net)\/app\/(ads|init) - reject
+
+# >> Zhiboba
+^https?:\/\/a\.qiumibao\.com\/activities\/config\.php - reject
+^https?:\/\/.+\/allOne\.php\?ad_name - reject
+
+# >> Zhihu
+^https?:\/\/www\.zhihu\.com\/terms\/privacy\/confirm - reject
+^https?:\/\/api\.zhihu\.com\/market\/popover - reject
+^https?:\/\/api\.zhihu\.com\/search\/(top|tab|preset) - reject
+^https?:\/\/api\.zhihu\.com\/(launch|ad-style-service|app_config|real_time|ab\/api) - reject
+^https?:\/\/api\.zhihu\.com\/commercial_api\/(launch|real_time) - reject
+^https?:\/\/(api|www)\.zhihu\.com\/.*(featured-comment-ad|recommendations|community-ad) - reject
+^https?:\/\/(api|www)\.zhihu\.com\/(fringe|adx|commercial|ad-style-service|banners|mqtt) - reject
+
+# >> Zhuishushenqi
+^https?:\/\/(api|b)\.zhuishushenqi\.com\/advert - reject
+^https?:\/\/api01pbmp\.zhuishushenqi\.com\/gameAdvert - reject
+^https?:\/\/api\.zhuishushenqi\.com\/notification\/shelfMessage - reject
+^https?:\/\/api\.zhuishushenqi\.com\/notification\/shelfMessage - reject
+^https?:\/\/api\.zhuishushenqi\.com\/recommend - reject
+^https?:\/\/api\.zhuishushenqi\.com\/splashes\/ios - reject
+^https?:\/\/api\.zhuishushenqi\.com\/user\/bookshelf-updated - reject
+^https?:\/\/b\.zhuishushenqi\.com\/advert - reject
+^https?:\/\/dspsdk\.abreader\.com\/v\d\/api\/ad\? - reject
+^https?:\/\/itunes\.apple\.com\/lookup\?id=575826903 - reject
+^https?:\/\/mi\.gdt\.qq\.com\/gdt_mview\.fcg - reject
+
+[Host]
+ip6-localhost = ::1
+ip6-loopback = ::1
+doh.pub = server:119.29.29.29
+taobao.com = server:223.6.6.6
+*.taobao.com = server:223.6.6.6
+tmall.com = server:223.6.6.6
+*.tmall.com = server:223.6.6.6
+jd.com = server:119.29.29.29
+*.jd.com = server:119.28.28.28
+*.qq.com = server:119.28.28.28
+*.tencent.com = server:119.28.28.28
+*.alicdn.com = server:223.5.5.5
+aliyun.com = server:223.5.5.5
+*.aliyun.com = server:223.5.5.5
+weixin.com = server:119.28.28.28
+*.weixin.com = server:119.28.28.28
+bilibili.com = server:119.29.29.29
+*.bilibili.com = server:119.29.29.29
+hdslb.com = server:119.29.29.29
+163.com = server:119.29.29.29
+*.163.com = server:119.29.29.29
+126.com = server:119.29.29.29
+*.126.com = server:119.29.29.29
+*.126.net = server:119.29.29.29
+*.127.net = server:119.29.29.29
+*.netease.com = server:119.29.29.29
+mi.com = server:119.29.29.29
+*.mi.com = server:119.29.29.29
+xiaomi.com = server:119.29.29.29
+*.xiaomi.com = server:119.29.29.29
+routerlogin.net = server:system
+_hotspot_.m2m = server:system
+router.asus.com = server:system
+hotspot.cslwifi.com = server:system
+amplifi.lan = server:system
+*.lan = server:system
+2ad30bj6-fc51.aws-agent.com=59415bj8-09x2.apt-agent.dev
+6ed68gz8-2ad3.aws-agent.com=50196gz8-f6k7.apt-agent.dev
+fc513sh2-6ed6.aws-agent.com=21492sh1-b2d1.apt-agent.dev
+
+[Script]
+
+http-response ^https?:\/\/(api|mapi)\.weibo\.(cn|com)\/2(\/groups\/timeline|\/statuses\/unread|\/statuses\/extend|\/comments\/build_comments|\/photo\/recommend_list|\/stories\/video_stream|\/statuses\/positives\/get|\/stories\/home_list|\/profile\/statuses|\/statuses\/friends\/timeline|\/service\/picfeed) requires-body=true,script-path=https://subweb.s3.fr-par.scw.cloud/Script/wb_ad
+http-response ^https?:\/\/(sdk|wb)app\.uve\.weibo\.com(\/interface\/sdk\/sdkad.php|\/wbapplua\/wbpullad.lua) requires-body=true,script-path=https://subweb.s3.fr-par.scw.cloud/Script/wb_launch
+
+http-response ^https:\/\/api\.rr\.tv[\s\S]*(channel|Feed|Choice|profile|Medal) max-size=524288,requires-body=true,script-path=https://subweb.s3.fr-par.scw.cloud/Script/RRad
+
+# Onewayticket255
+http-response https://oauth.secure.pixiv.net/auth/token requires-body=1,max-size=0,script-path=https://subweb.s3.fr-par.scw.cloud/Script/pixiv_premium
+
+http-response https://abema.tv/.* requires-body=1,max-size=-1,script-path=https://subweb.s3.fr-par.scw.cloud/Script/surge_abematv_web
+
+[MITM]
+enable = false
+tcp-connection = false
+skip-server-cert-verify = false
+hostname = *.abema.tv, *.music.163.com, *.music.126.net, *.chelaile.net.cn, *.didistatic.com, *.google-analytics.com, *.googlevideo.com, *.iydsj.com, *.k.sohu.com, *.kfc.com, *.kingsoft-office-service.com, *.meituan.net, *.ofo.com, *.pixiv.net, *.uve.weibo.com, *.wikipedia.org, *.wikiwand.com, *.ydstatic.com, *.youdao.com, *.youtube.com, *.zhuishushenqi.com, 119.18.193.135, 123.59.31.1, 153.3.236.81, 180.101.212.22, 218.11.3.70, 59.151.53.6, a.apicloud.com, a.applovin.com, a.qiumibao.com, a.sfansclub.com, a.wkanx.com, abema.tv, acs.m.taobao.com, act.vip.iqiyi.com, adse.ximalaya.com, api*.musical.ly, api-release.wuta-cam.com, api.abema.io, api.bilibili.com, api.daydaycook.com.cn, api.gotokeep.com, api.intsig.net, api.jr.mi.com, api.jxedt.com, api.kkmh.com, api.m.jd.com, api.mgzf.com, api.psy-1.com, api.rr.tv, api.smzdm.com, api.tv.sohu.com, api.wallstreetcn.com, api.weibo.cn, api.xiachufang.com, api.zhihu.com, api.zhuishushenqi.com, api5.futunn.com, app.10086.cn, app.58.com, app.api.ke.com, app.bilibili.com, app.mixcapp.com, app.variflight.com, app.wy.guahao.com, b.zhuishushenqi.com, c.m.163.com, cap.caocaokeji.cn, capi.mwee.cn, cdn.moji.com, channel.beitaichufang.com, client.mail.163.com, cms.daydaycook.com.cn, dspsdk.abreader.com, fdfs.xmcdn.com, gateway.shouqiev.com, gw-passenger.01zhuanche.com, gw.alicdn.com, huichuan.sm.cn, i.weread.qq.com, i.ys7.com, iapi.bishijie.com, iface.iqiyi.com, img*.doubanio.com, img.jiemian.com, interface.music.163.com, ios.wps.cn, m*.amap.com, m.client.10010.com, m.creditcard.ecitic.com, m.ibuscloud.com, m.yap.yahoo.com, mapi.mafengwo.cn, mapi.weibo.com, media.qyer.com, mi.gdt.qq.com, mob.mddcloud.com.cn, mobile-api2011.elong.com, mp.weixin.qq.com, mrobot.pcauto.com.cn, mrobot.pconline.com.cn, ms.jr.jd.com, msspjh.emarbox.com, music.163.com, music.126.net, newsso.map.qq.com, nnapp.cloudbae.cn, open.qyer.com, portal-xunyou.qingcdn.com, pss.txffp.com, r.inews.qq.com, render.alipay.com, res-release.wuta-cam.com, richmanapi.jxedt.com, service.4gtv.tv, smkmp.96225.com, snailsleep.net, sp.kaola.com, ssl.kohsocialapp.qq.com, static.vuevideo.net, static1.keepcdn.com, support.you.163.com, thor.weidian.com, www.dandanzan.com, www.flyertea.com, www.zhihu.com, youtubei.googleapis.com, zhidao.baidu.com
+# ca-p12 = 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
+# ca-passphrase = Flower
+
+[Proxy]
+DIRECT = direct
+Traffic: 0 GB | 150 GB = ss, 6ed68gz8-2ad3.aws-agent.com, 10011, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+Expire: 2026-10-14 = ss, 6ed68gz8-2ad3.aws-agent.com, 10011, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇭🇰 香港实验性 IEPL 专线 1 = ss, 6ed68gz8-2ad3.aws-agent.com, 10011, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇯🇵 日本实验性 IEPL 专线 1 = ss, fc513sh2-6ed6.aws-agent.com, 10021, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇸🇬 新加坡实验性 IEPL 专线 1 = ss, 6ed68gz8-2ad3.aws-agent.com, 10031, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇺🇸 美国实验性 IEPL 专线 1 = ss, fc513sh2-6ed6.aws-agent.com, 10051, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇭🇰 香港高级 IEPL 专线 1 = ss, 6ed68gz8-2ad3.aws-agent.com, 12002, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇭🇰 香港高级 IEPL 专线 2 = ss, 6ed68gz8-2ad3.aws-agent.com, 12009, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇭🇰 香港高级 IEPL 专线 3 = ss, 6ed68gz8-2ad3.aws-agent.com, 12008, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇯🇵 日本高级 IEPL 专线 1 = ss, fc513sh2-6ed6.aws-agent.com, 12012, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇯🇵 日本高级 IEPL 专线 2 = ss, fc513sh2-6ed6.aws-agent.com, 12019, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇯🇵 日本高级 IEPL 专线 3 = ss, fc513sh2-6ed6.aws-agent.com, 12018, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇸🇬 新加坡高级 IEPL 专线 1 = ss, 6ed68gz8-2ad3.aws-agent.com, 12032, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇸🇬 新加坡高级 IEPL 专线 2 = ss, 6ed68gz8-2ad3.aws-agent.com, 12039, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇸🇬 新加坡高级 IEPL 专线 3 = ss, 6ed68gz8-2ad3.aws-agent.com, 12038, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇨🇳 台湾高级 IEPL 专线 1 = ss, 6ed68gz8-2ad3.aws-agent.com, 12042, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇨🇳 台湾高级 IEPL 专线 2 = ss, 6ed68gz8-2ad3.aws-agent.com, 12049, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇨🇳 台湾高级 IEPL 专线 3 = ss, 6ed68gz8-2ad3.aws-agent.com, 12048, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇺🇸 美国高级 IEPL 专线 1 = ss, fc513sh2-6ed6.aws-agent.com, 12022, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇺🇸 美国高级 IEPL 专线 2 = ss, fc513sh2-6ed6.aws-agent.com, 12029, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇺🇸 美国高级 IEPL 专线 3 = ss, fc513sh2-6ed6.aws-agent.com, 12028, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇭🇰 香港标准 IEPL 专线 1 = ss, 6ed68gz8-2ad3.aws-agent.com, 11002, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇭🇰 香港标准 IEPL 专线 2 = ss, 6ed68gz8-2ad3.aws-agent.com, 11003, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇭🇰 香港标准 IEPL 专线 3 = ss, 6ed68gz8-2ad3.aws-agent.com, 11005, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇭🇰 香港标准 IEPL 专线 4 = ss, 6ed68gz8-2ad3.aws-agent.com, 11006, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇭🇰 香港标准 IEPL 专线 5 = ss, 6ed68gz8-2ad3.aws-agent.com, 11004, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇭🇰 香港标准 IEPL 专线 6 = ss, 6ed68gz8-2ad3.aws-agent.com, 11008, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇭🇰 香港标准 IEPL 专线 7 = ss, 6ed68gz8-2ad3.aws-agent.com, 11001, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇭🇰 香港标准 IEPL 专线 8 = ss, 6ed68gz8-2ad3.aws-agent.com, 11007, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇯🇵 日本标准 IEPL 专线 1 = ss, fc513sh2-6ed6.aws-agent.com, 11012, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇯🇵 日本标准 IEPL 专线 2 = ss, fc513sh2-6ed6.aws-agent.com, 11013, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇯🇵 日本标准 IEPL 专线 3 = ss, fc513sh2-6ed6.aws-agent.com, 11015, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇯🇵 日本标准 IEPL 专线 4 = ss, fc513sh2-6ed6.aws-agent.com, 11016, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇯🇵 日本标准 IEPL 专线 5 = ss, fc513sh2-6ed6.aws-agent.com, 11014, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇯🇵 日本标准 IEPL 专线 6 = ss, fc513sh2-6ed6.aws-agent.com, 11018, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇯🇵 日本标准 IEPL 专线 7 = ss, fc513sh2-6ed6.aws-agent.com, 11011, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇯🇵 日本标准 IEPL 专线 8 = ss, fc513sh2-6ed6.aws-agent.com, 11017, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇸🇬 新加坡标准 IEPL 专线 1 = ss, 6ed68gz8-2ad3.aws-agent.com, 11032, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇸🇬 新加坡标准 IEPL 专线 2 = ss, 6ed68gz8-2ad3.aws-agent.com, 11033, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇸🇬 新加坡标准 IEPL 专线 3 = ss, 6ed68gz8-2ad3.aws-agent.com, 11035, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇸🇬 新加坡标准 IEPL 专线 4 = ss, 6ed68gz8-2ad3.aws-agent.com, 11036, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇸🇬 新加坡标准 IEPL 专线 5 = ss, 6ed68gz8-2ad3.aws-agent.com, 11034, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇸🇬 新加坡标准 IEPL 专线 6 = ss, 6ed68gz8-2ad3.aws-agent.com, 11038, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇸🇬 新加坡标准 IEPL 专线 7 = ss, 6ed68gz8-2ad3.aws-agent.com, 11031, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇸🇬 新加坡标准 IEPL 专线 8 = ss, 6ed68gz8-2ad3.aws-agent.com, 11037, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇨🇳 台湾标准 IEPL 专线 1 = ss, 6ed68gz8-2ad3.aws-agent.com, 11041, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇨🇳 台湾标准 IEPL 专线 2 = ss, 6ed68gz8-2ad3.aws-agent.com, 11043, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇨🇳 台湾标准 IEPL 专线 3 = ss, 6ed68gz8-2ad3.aws-agent.com, 11042, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇺🇸 美国标准 IEPL 专线 1 = ss, fc513sh2-6ed6.aws-agent.com, 11022, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇺🇸 美国标准 IEPL 专线 2 = ss, fc513sh2-6ed6.aws-agent.com, 11023, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇺🇸 美国标准 IEPL 专线 3 = ss, fc513sh2-6ed6.aws-agent.com, 11025, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇺🇸 美国标准 IEPL 专线 4 = ss, fc513sh2-6ed6.aws-agent.com, 11026, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇺🇸 美国标准 IEPL 专线 5 = ss, fc513sh2-6ed6.aws-agent.com, 11024, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇺🇸 美国标准 IEPL 专线 6 = ss, fc513sh2-6ed6.aws-agent.com, 11028, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇺🇸 美国标准 IEPL 专线 7 = ss, fc513sh2-6ed6.aws-agent.com, 11021, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇺🇸 美国标准 IEPL 专线 8 = ss, fc513sh2-6ed6.aws-agent.com, 11027, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇲🇩 摩尔多瓦标准 IEPL 专线 1 = ss, 2ad30bj6-fc51.aws-agent.com, 11050, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇺🇦 乌克兰标准 IEPL 专线 1 = ss, 2ad30bj6-fc51.aws-agent.com, 11051, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇮🇹 意大利标准 IEPL 专线 1 = ss, 2ad30bj6-fc51.aws-agent.com, 11052, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇭🇺 匈牙利标准 IEPL 专线 1 = ss, 2ad30bj6-fc51.aws-agent.com, 11053, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇪🇸 西班牙标准 IEPL 专线 1 = ss, 2ad30bj6-fc51.aws-agent.com, 11054, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇹🇷 土耳其标准 IEPL 专线 1 = ss, 2ad30bj6-fc51.aws-agent.com, 11055, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇩🇪 德国标准 IEPL 专线 1 = ss, 2ad30bj6-fc51.aws-agent.com, 11056, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇩🇪 德国标准 IEPL 专线 2 = ss, 2ad30bj6-fc51.aws-agent.com, 11057, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇬🇧 英国标准 IEPL 专线 1 = ss, 2ad30bj6-fc51.aws-agent.com, 11058, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇬🇧 英国标准 IEPL 专线 2 = ss, 2ad30bj6-fc51.aws-agent.com, 11059, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇳🇱 荷兰标准 IEPL 专线 1 = ss, 2ad30bj6-fc51.aws-agent.com, 11060, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇳🇱 荷兰标准 IEPL 专线 2 = ss, 2ad30bj6-fc51.aws-agent.com, 11061, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇫🇷 法国标准 IEPL 专线 1 = ss, 2ad30bj6-fc51.aws-agent.com, 11062, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇫🇷 法国标准 IEPL 专线 2 = ss, 2ad30bj6-fc51.aws-agent.com, 11063, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇨🇦 加拿大标准 IEPL 专线 1 = ss, fc513sh2-6ed6.aws-agent.com, 11064, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇨🇦 加拿大标准 IEPL 专线 2 = ss, fc513sh2-6ed6.aws-agent.com, 11065, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇦🇷 阿根廷标准 IEPL 专线 1 = ss, fc513sh2-6ed6.aws-agent.com, 11066, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇧🇷 巴西标准 IEPL 专线 1 = ss, fc513sh2-6ed6.aws-agent.com, 11067, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇨🇱 智利标准 IEPL 专线 1 = ss, fc513sh2-6ed6.aws-agent.com, 11068, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇦🇺 澳大利亚标准 IEPL 专线 1 = ss, 6ed68gz8-2ad3.aws-agent.com, 11069, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇳🇿 新西兰标准 IEPL 专线 1 = ss, 6ed68gz8-2ad3.aws-agent.com, 11070, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇰🇷 韩国标准 IEPL 专线 1 = ss, fc513sh2-6ed6.aws-agent.com, 11071, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇰🇷 韩国标准 IEPL 专线 2 = ss, fc513sh2-6ed6.aws-agent.com, 11072, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇮🇩 印尼标准 IEPL 专线 1 = ss, 6ed68gz8-2ad3.aws-agent.com, 11073, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇹🇭 泰国标准 IEPL 专线 1 = ss, 6ed68gz8-2ad3.aws-agent.com, 11074, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇻🇳 越南标准 IEPL 专线 1 = ss, 6ed68gz8-2ad3.aws-agent.com, 11075, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇮🇳 印度标准 IEPL 专线 1 = ss, 6ed68gz8-2ad3.aws-agent.com, 11080, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇵🇰 巴基斯坦标准 IEPL 专线 1 = ss, 6ed68gz8-2ad3.aws-agent.com, 11081, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇮🇱 以色列标准 IEPL 专线 1 = ss, 2ad30bj6-fc51.aws-agent.com, 11082, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇦🇪 阿联酋标准 IEPL 专线 1 = ss, 6ed68gz8-2ad3.aws-agent.com, 11083, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇵🇭 菲律宾标准 IEPL 专线 1 = ss, 6ed68gz8-2ad3.aws-agent.com, 11084, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇲🇾 马来西亚标准 IEPL 专线 1 = ss, 6ed68gz8-2ad3.aws-agent.com, 11085, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇪🇬 埃及标准 IEPL 专线 1 = ss, 2ad30bj6-fc51.aws-agent.com, 11086, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+🇳🇬 尼日利亚标准 IEPL 专线 1 = ss, 2ad30bj6-fc51.aws-agent.com, 11087, encrypt-method=aes-128-gcm, password=Sj10bnYDe7w6V29E,obfs=http,obfs-host=3e4d91df8d.m.ctrip.com, tfo=true, udp-relay=false
+
+[Proxy Group]
+Proxies = select,HK,JP,SG,TW,US,Traffic: 0 GB | 150 GB,Expire: 2026-10-14,🇭🇰 香港实验性 IEPL 专线 1,🇯🇵 日本实验性 IEPL 专线 1,🇸🇬 新加坡实验性 IEPL 专线 1,🇺🇸 美国实验性 IEPL 专线 1,🇭🇰 香港高级 IEPL 专线 1,🇭🇰 香港高级 IEPL 专线 2,🇭🇰 香港高级 IEPL 专线 3,🇯🇵 日本高级 IEPL 专线 1,🇯🇵 日本高级 IEPL 专线 2,🇯🇵 日本高级 IEPL 专线 3,🇸🇬 新加坡高级 IEPL 专线 1,🇸🇬 新加坡高级 IEPL 专线 2,🇸🇬 新加坡高级 IEPL 专线 3,🇨🇳 台湾高级 IEPL 专线 1,🇨🇳 台湾高级 IEPL 专线 2,🇨🇳 台湾高级 IEPL 专线 3,🇺🇸 美国高级 IEPL 专线 1,🇺🇸 美国高级 IEPL 专线 2,🇺🇸 美国高级 IEPL 专线 3,🇭🇰 香港标准 IEPL 专线 1,🇭🇰 香港标准 IEPL 专线 2,🇭🇰 香港标准 IEPL 专线 3,🇭🇰 香港标准 IEPL 专线 4,🇭🇰 香港标准 IEPL 专线 5,🇭🇰 香港标准 IEPL 专线 6,🇭🇰 香港标准 IEPL 专线 7,🇭🇰 香港标准 IEPL 专线 8,🇯🇵 日本标准 IEPL 专线 1,🇯🇵 日本标准 IEPL 专线 2,🇯🇵 日本标准 IEPL 专线 3,🇯🇵 日本标准 IEPL 专线 4,🇯🇵 日本标准 IEPL 专线 5,🇯🇵 日本标准 IEPL 专线 6,🇯🇵 日本标准 IEPL 专线 7,🇯🇵 日本标准 IEPL 专线 8,🇸🇬 新加坡标准 IEPL 专线 1,🇸🇬 新加坡标准 IEPL 专线 2,🇸🇬 新加坡标准 IEPL 专线 3,🇸🇬 新加坡标准 IEPL 专线 4,🇸🇬 新加坡标准 IEPL 专线 5,🇸🇬 新加坡标准 IEPL 专线 6,🇸🇬 新加坡标准 IEPL 专线 7,🇸🇬 新加坡标准 IEPL 专线 8,🇨🇳 台湾标准 IEPL 专线 1,🇨🇳 台湾标准 IEPL 专线 2,🇨🇳 台湾标准 IEPL 专线 3,🇺🇸 美国标准 IEPL 专线 1,🇺🇸 美国标准 IEPL 专线 2,🇺🇸 美国标准 IEPL 专线 3,🇺🇸 美国标准 IEPL 专线 4,🇺🇸 美国标准 IEPL 专线 5,🇺🇸 美国标准 IEPL 专线 6,🇺🇸 美国标准 IEPL 专线 7,🇺🇸 美国标准 IEPL 专线 8,🇲🇩 摩尔多瓦标准 IEPL 专线 1,🇺🇦 乌克兰标准 IEPL 专线 1,🇮🇹 意大利标准 IEPL 专线 1,🇭🇺 匈牙利标准 IEPL 专线 1,🇪🇸 西班牙标准 IEPL 专线 1,🇹🇷 土耳其标准 IEPL 专线 1,🇩🇪 德国标准 IEPL 专线 1,🇩🇪 德国标准 IEPL 专线 2,🇬🇧 英国标准 IEPL 专线 1,🇬🇧 英国标准 IEPL 专线 2,🇳🇱 荷兰标准 IEPL 专线 1,🇳🇱 荷兰标准 IEPL 专线 2,🇫🇷 法国标准 IEPL 专线 1,🇫🇷 法国标准 IEPL 专线 2,🇨🇦 加拿大标准 IEPL 专线 1,🇨🇦 加拿大标准 IEPL 专线 2,🇦🇷 阿根廷标准 IEPL 专线 1,🇧🇷 巴西标准 IEPL 专线 1,🇨🇱 智利标准 IEPL 专线 1,🇦🇺 澳大利亚标准 IEPL 专线 1,🇳🇿 新西兰标准 IEPL 专线 1,🇰🇷 韩国标准 IEPL 专线 1,🇰🇷 韩国标准 IEPL 专线 2,🇮🇩 印尼标准 IEPL 专线 1,🇹🇭 泰国标准 IEPL 专线 1,🇻🇳 越南标准 IEPL 专线 1,🇮🇳 印度标准 IEPL 专线 1,🇵🇰 巴基斯坦标准 IEPL 专线 1,🇮🇱 以色列标准 IEPL 专线 1,🇦🇪 阿联酋标准 IEPL 专线 1,🇵🇭 菲律宾标准 IEPL 专线 1,🇲🇾 马来西亚标准 IEPL 专线 1,🇪🇬 埃及标准 IEPL 专线 1,🇳🇬 尼日利亚标准 IEPL 专线 1
+YouTube = select,Proxies,HK,JP,SG,TW,US
+Disney = select,Proxies,HK,JP,SG,TW,US
+Hbomax = select,Proxies,HK,JP,SG,TW,US
+Netflix = select,Proxies,HK,JP,SG,TW,US
+Bahamut = select,Proxies,HK,TW
+Bilibili = select,DIRECT,HK,TW
+Spotify = select,Proxies,DIRECT,HK,JP,SG,TW,US
+Steam = select,Proxies,DIRECT,HK,JP,SG,TW,US
+Telegram = select,Proxies,HK,JP,SG,TW,US
+Google = select,Proxies,HK,JP,SG,TW,US
+Microsoft = select,Proxies,DIRECT,HK,JP,SG,TW,US
+OpenAI = select,Proxies,HK,JP,SG,TW,US
+PayPal = select,Proxies,DIRECT,HK,JP,SG,TW,US
+Apple = select,Proxies,DIRECT,HK,JP,SG,TW,US
+Final = select,Proxies,DIRECT
+HK = select,🇭🇰 香港实验性 IEPL 专线 1,🇭🇰 香港高级 IEPL 专线 1,🇭🇰 香港高级 IEPL 专线 2,🇭🇰 香港高级 IEPL 专线 3,🇭🇰 香港标准 IEPL 专线 1,🇭🇰 香港标准 IEPL 专线 2,🇭🇰 香港标准 IEPL 专线 3,🇭🇰 香港标准 IEPL 专线 4,🇭🇰 香港标准 IEPL 专线 5,🇭🇰 香港标准 IEPL 专线 6,🇭🇰 香港标准 IEPL 专线 7,🇭🇰 香港标准 IEPL 专线 8
+JP = select,🇯🇵 日本实验性 IEPL 专线 1,🇯🇵 日本高级 IEPL 专线 1,🇯🇵 日本高级 IEPL 专线 2,🇯🇵 日本高级 IEPL 专线 3,🇯🇵 日本标准 IEPL 专线 1,🇯🇵 日本标准 IEPL 专线 2,🇯🇵 日本标准 IEPL 专线 3,🇯🇵 日本标准 IEPL 专线 4,🇯🇵 日本标准 IEPL 专线 5,🇯🇵 日本标准 IEPL 专线 6,🇯🇵 日本标准 IEPL 专线 7,🇯🇵 日本标准 IEPL 专线 8
+SG = select,🇸🇬 新加坡实验性 IEPL 专线 1,🇸🇬 新加坡高级 IEPL 专线 1,🇸🇬 新加坡高级 IEPL 专线 2,🇸🇬 新加坡高级 IEPL 专线 3,🇸🇬 新加坡标准 IEPL 专线 1,🇸🇬 新加坡标准 IEPL 专线 2,🇸🇬 新加坡标准 IEPL 专线 3,🇸🇬 新加坡标准 IEPL 专线 4,🇸🇬 新加坡标准 IEPL 专线 5,🇸🇬 新加坡标准 IEPL 专线 6,🇸🇬 新加坡标准 IEPL 专线 7,🇸🇬 新加坡标准 IEPL 专线 8
+TW = select,🇨🇳 台湾高级 IEPL 专线 1,🇨🇳 台湾高级 IEPL 专线 2,🇨🇳 台湾高级 IEPL 专线 3,🇨🇳 台湾标准 IEPL 专线 1,🇨🇳 台湾标准 IEPL 专线 2,🇨🇳 台湾标准 IEPL 专线 3
+US = select,🇺🇸 美国实验性 IEPL 专线 1,🇺🇸 美国高级 IEPL 专线 1,🇺🇸 美国高级 IEPL 专线 2,🇺🇸 美国高级 IEPL 专线 3,🇺🇸 美国标准 IEPL 专线 1,🇺🇸 美国标准 IEPL 专线 2,🇺🇸 美国标准 IEPL 专线 3,🇺🇸 美国标准 IEPL 专线 4,🇺🇸 美国标准 IEPL 专线 5,🇺🇸 美国标准 IEPL 专线 6,🇺🇸 美国标准 IEPL 专线 7,🇺🇸 美国标准 IEPL 专线 8
+
