@@ -1,11 +1,13 @@
-#!MANAGED-CONFIG https://api.sublink.dev/sub?target=surge&ver=4&emoji=true&tfo=true&udp=true&scv=true&filename=LinkCube&url=https%3A%2F%2Fapi-linkcube.net%2Fsubscribe%2Fedvdw-gnrzxp5u interval=864000 strict=false
+#!MANAGED-CONFIG https://api.linkcube.dev/sub?target=surge&ver=4&emoji=true&tfo=true&udp=true&scv=true&filename=LinkCube&url=https%3A%2F%2Fapi-linkcube.com%2Fsubscribe%2Fzjqxmw-jmt0bpna interval=864000 strict=false
 
 [General]
 dns-server=119.29.29.29,223.5.5.5
 use-local-host-item-for-proxy=true
 bypass-system = true
 skip-proxy = 127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,100.64.0.0/10,17.0.0.0/8,localhost,*.local,passenger.t3go.cn
-bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.0.0.0/24,192.0.2.0/24,192.88.99.0/24,192.168.0.0/16,198.18.0.0/15,198.51.100.0/24,203.0.113.0/24,224.0.0.0/4,255.255.255.255/32
+bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.0.0.0/24,192.0.2.0/24,192.88.99.0/24,192.168.0.0/16,198.51.100.0/24,203.0.113.0/24,224.0.0.0/4,255.255.255.255/32
+doh-server = https://dns.alidns.com/dns-query, https://doh.pub/dns-query
+encrypted-dns-server = tls://119.29.29.29, tls://223.5.5.5, https://dns.alidns.com/dns-query, https://doh.pub/dns-query
 hijack-dns = 8.8.8.8:53, 8.8.4.4:53
 loglevel = notify
 replica = false
@@ -48,25 +50,25 @@ URL-REGEX,^https?:\/\/api\.zhihu\.com\/commercial_api\/launch_v2\?,REJECT
 URL-REGEX,^https?:\/\/api\.zhihu\.com\/commercial_api\/real_time_launch_v2\?,REJECT
 URL-REGEX,^https?:\/\/www\.zhihu\.com\/api\/v\d+\/brand\/question/\d+/card\?,REJECT
 
-RULE-SET,https://api.sublink.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9VbmJyZWFrLmxpc3Q,DIRECT,update-interval=86400
-RULE-SET,https://api.sublink.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9TdHJlYW1pbmdNZWRpYS9WaWRlby9Zb3VUdWJlLmxpc3Q,YouTube,update-interval=86400
-RULE-SET,https://api.sublink.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9TdHJlYW1pbmdNZWRpYS9WaWRlby9EaXNuZXlQbHVzLmxpc3Q,Disney,update-interval=86400
-RULE-SET,https://api.sublink.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9TdHJlYW1pbmdNZWRpYS9WaWRlby9IQk8tVVNBLmxpc3Q,Hbomax,update-interval=86400
-RULE-SET,https://api.sublink.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9TdHJlYW1pbmdNZWRpYS9WaWRlby9OZXRmbGl4Lmxpc3Q,Netflix,update-interval=86400
-RULE-SET,https://api.sublink.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9TdHJlYW1pbmdNZWRpYS9WaWRlby9CYWhhbXV0Lmxpc3Q,Bahamut,update-interval=86400
-RULE-SET,https://api.sublink.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9TdHJlYW1pbmdNZWRpYS9TdHJlYW1pbmdTRS5saXN0,Bilibili,update-interval=86400
-RULE-SET,https://api.sublink.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9TdHJlYW1pbmdNZWRpYS9NdXNpYy9TcG90aWZ5Lmxpc3Q,Spotify,update-interval=86400
-RULE-SET,https://api.sublink.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9FeHRyYS9HYW1lL1N0ZWFtLmxpc3Q,Steam,update-interval=86400
-RULE-SET,https://api.sublink.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9FeHRyYS9UZWxlZ3JhbS9UZWxlZ3JhbS5saXN0,Telegram,update-interval=86400
-RULE-SET,https://api.sublink.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9FeHRyYS9Hb29nbGUvR29vZ2xlLmxpc3Q,Google,update-interval=86400
-RULE-SET,https://api.sublink.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9FeHRyYS9NaWNyb3NvZnQvTWljcm9zb2Z0Lmxpc3Q,Microsoft,update-interval=86400
-RULE-SET,https://api.sublink.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9FeHRyYS9PcGVuQUkvT3BlbkFJLmxpc3Q,OpenAI,update-interval=86400
-RULE-SET,https://api.sublink.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9FeHRyYS9QYXlQYWwubGlzdA,PayPal,update-interval=86400
-RULE-SET,https://api.sublink.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9FeHRyYS9BcHBsZS9BcHBsZS5saXN0,Apple,update-interval=86400
-RULE-SET,https://api.sublink.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9HbG9iYWwubGlzdA,Proxies,update-interval=86400
-RULE-SET,https://api.sublink.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9TdHJlYW1pbmdNZWRpYS9WaWRlby9QaXhpdi5saXN0,JP,update-interval=86400
-RULE-SET,https://api.sublink.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9DaGluYS5saXN0,DIRECT,update-interval=86400
-RULE-SET,https://api.sublink.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9Mb2NhbEFyZWFOZXR3b3JrLmxpc3Q,DIRECT,update-interval=86400
+RULE-SET,https://api.linkcube.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9VbmJyZWFrLmxpc3Q,DIRECT,update-interval=86400
+RULE-SET,https://api.linkcube.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9TdHJlYW1pbmdNZWRpYS9WaWRlby9Zb3VUdWJlLmxpc3Q,YouTube,update-interval=86400
+RULE-SET,https://api.linkcube.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9TdHJlYW1pbmdNZWRpYS9WaWRlby9EaXNuZXlQbHVzLmxpc3Q,Disney,update-interval=86400
+RULE-SET,https://api.linkcube.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9TdHJlYW1pbmdNZWRpYS9WaWRlby9IQk8tVVNBLmxpc3Q,Hbomax,update-interval=86400
+RULE-SET,https://api.linkcube.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9TdHJlYW1pbmdNZWRpYS9WaWRlby9OZXRmbGl4Lmxpc3Q,Netflix,update-interval=86400
+RULE-SET,https://api.linkcube.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9TdHJlYW1pbmdNZWRpYS9WaWRlby9CYWhhbXV0Lmxpc3Q,Bahamut,update-interval=86400
+RULE-SET,https://api.linkcube.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9TdHJlYW1pbmdNZWRpYS9TdHJlYW1pbmdTRS5saXN0,Bilibili,update-interval=86400
+RULE-SET,https://api.linkcube.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9TdHJlYW1pbmdNZWRpYS9NdXNpYy9TcG90aWZ5Lmxpc3Q,Spotify,update-interval=86400
+RULE-SET,https://api.linkcube.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9FeHRyYS9HYW1lL1N0ZWFtLmxpc3Q,Steam,update-interval=86400
+RULE-SET,https://api.linkcube.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9FeHRyYS9UZWxlZ3JhbS9UZWxlZ3JhbS5saXN0,Telegram,update-interval=86400
+RULE-SET,https://api.linkcube.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9FeHRyYS9Hb29nbGUvR29vZ2xlLmxpc3Q,Google,update-interval=86400
+RULE-SET,https://api.linkcube.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9FeHRyYS9NaWNyb3NvZnQvTWljcm9zb2Z0Lmxpc3Q,Microsoft,update-interval=86400
+RULE-SET,https://api.linkcube.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9FeHRyYS9PcGVuQUkvT3BlbkFJLmxpc3Q,OpenAI,update-interval=86400
+RULE-SET,https://api.linkcube.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9FeHRyYS9QYXlQYWwubGlzdA,PayPal,update-interval=86400
+RULE-SET,https://api.linkcube.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9FeHRyYS9BcHBsZS9BcHBsZS5saXN0,Apple,update-interval=86400
+RULE-SET,https://api.linkcube.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9HbG9iYWwubGlzdA,Proxies,update-interval=86400
+RULE-SET,https://api.linkcube.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9TdHJlYW1pbmdNZWRpYS9WaWRlby9QaXhpdi5saXN0,JP,update-interval=86400
+RULE-SET,https://api.linkcube.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9DaGluYS5saXN0,DIRECT,update-interval=86400
+RULE-SET,https://api.linkcube.dev/getruleset?type=1&url=UHJvZmlsZXMvU3VyZ2UvUnVsZXNldC9Mb2NhbEFyZWFOZXR3b3JrLmxpc3Q,DIRECT,update-interval=86400
 GEOIP,CN,DIRECT
 FINAL,Final
 
@@ -710,69 +712,69 @@ http-response https://oauth.secure.pixiv.net/auth/token requires-body=1,max-size
 http-response https://abema.tv/.* requires-body=1,max-size=-1,script-path=https://subweb.s3.fr-par.scw.cloud/Script/surge_abematv_web
 
 [MITM]
-enable = true
+enable = false
 tcp-connection = false
 skip-server-cert-verify = false
 hostname = *.abema.tv, *.music.163.com, *.music.126.net, *.chelaile.net.cn, *.didistatic.com, *.google-analytics.com, *.googlevideo.com, *.iydsj.com, *.k.sohu.com, *.kfc.com, *.kingsoft-office-service.com, *.meituan.net, *.ofo.com, *.pixiv.net, *.uve.weibo.com, *.wikipedia.org, *.wikiwand.com, *.ydstatic.com, *.youdao.com, *.youtube.com, *.zhuishushenqi.com, 119.18.193.135, 123.59.31.1, 153.3.236.81, 180.101.212.22, 218.11.3.70, 59.151.53.6, a.apicloud.com, a.applovin.com, a.qiumibao.com, a.sfansclub.com, a.wkanx.com, abema.tv, acs.m.taobao.com, act.vip.iqiyi.com, adse.ximalaya.com, api*.musical.ly, api-release.wuta-cam.com, api.abema.io, api.bilibili.com, api.daydaycook.com.cn, api.gotokeep.com, api.intsig.net, api.jr.mi.com, api.jxedt.com, api.kkmh.com, api.m.jd.com, api.mgzf.com, api.psy-1.com, api.rr.tv, api.smzdm.com, api.tv.sohu.com, api.wallstreetcn.com, api.weibo.cn, api.xiachufang.com, api.zhihu.com, api.zhuishushenqi.com, api5.futunn.com, app.10086.cn, app.58.com, app.api.ke.com, app.bilibili.com, app.mixcapp.com, app.variflight.com, app.wy.guahao.com, b.zhuishushenqi.com, c.m.163.com, cap.caocaokeji.cn, capi.mwee.cn, cdn.moji.com, channel.beitaichufang.com, client.mail.163.com, cms.daydaycook.com.cn, dspsdk.abreader.com, fdfs.xmcdn.com, gateway.shouqiev.com, gw-passenger.01zhuanche.com, gw.alicdn.com, huichuan.sm.cn, i.weread.qq.com, i.ys7.com, iapi.bishijie.com, iface.iqiyi.com, img*.doubanio.com, img.jiemian.com, interface.music.163.com, ios.wps.cn, m*.amap.com, m.client.10010.com, m.creditcard.ecitic.com, m.ibuscloud.com, m.yap.yahoo.com, mapi.mafengwo.cn, mapi.weibo.com, media.qyer.com, mi.gdt.qq.com, mob.mddcloud.com.cn, mobile-api2011.elong.com, mp.weixin.qq.com, mrobot.pcauto.com.cn, mrobot.pconline.com.cn, ms.jr.jd.com, msspjh.emarbox.com, music.163.com, music.126.net, newsso.map.qq.com, nnapp.cloudbae.cn, open.qyer.com, portal-xunyou.qingcdn.com, pss.txffp.com, r.inews.qq.com, render.alipay.com, res-release.wuta-cam.com, richmanapi.jxedt.com, service.4gtv.tv, smkmp.96225.com, snailsleep.net, sp.kaola.com, ssl.kohsocialapp.qq.com, static.vuevideo.net, static1.keepcdn.com, support.you.163.com, thor.weidian.com, www.dandanzan.com, www.flyertea.com, www.zhihu.com, youtubei.googleapis.com, zhidao.baidu.com
-ca-p12 = MIIEWgIBAzCCBCAGCSqGSIb3DQEHAaCCBBEEggQNMIIECTCCAv8GCSqGSIb3DQEHBqCCAvAwggLsAgEAMIIC5QYJKoZIhvcNAQcBMBwGCiqGSIb3DQEMAQYwDgQIEbxT6Tq17dsCAggAgIICuCzGa3ovYwnv6OIzJLkSKyAFypSmJ8KTBPyai2s1heOTIf3PoC0aSml1Q0blJ2R9tAEJMS3SoM4PjNK6q6nGycAgx1dIUFEQG7DEQebVP0XHHK6uNyRPqgXPrhCXjqZSOLhpcsg4BfLRjf0S0fquZySAi7kn5IXUo1fUey2r/36UkT8imBHPsUSsllryK5dXBQAwJtPYGl7nV50F/LA58ckv5pT+gDS4vVvUAytPfoqTDPCUEMzrZkXu7ZP/6YP+DeUgLXFvEubSkmrEeztJoC2GozClPNtRHfbMzA/jTH1/lOZ1zDdvrNheDLgP8CBv/mawNy4dxrJozfOcdEiWdLAMp8PmcXvaY9sNVlYYP+ztIMA/oaIHEycsOvx1PxMU2i8s/SIZBDszdHgRqKC6fVJxcrv0qtYdUlmfGKWt85LeB7JPXlmfs6ovGrZuc9y2WNnq2cbPmZuKbdxB5j/oM8jA6fLO9Z1MZDEXo42CgU7ZONjK8/bLG5J3wlI4DnC6HYwk3hSUWRBFpjNkRlUhZZWwMsfjBmYG9/hvDF7aGCeBDwm/euWLz9lGuUqRs5F11YhRL2dhOHC2mB4fhsSGbsgOps15fsuUydheYbU12hkGfYQSNsVi0d1GiGIsdiEtrYhXAWnY6DfGPERbhYvwlPSUAvdgWltC/BYgVMM//y3PwCVhcjEfYOK6k3ZNLuIc4Nebk2FPI7u0eXCk0Pi/RiSlOiBO79B2jpEdpyQbEDYAvetEsmaU6M8SZMMHnupNET/Sy+LlpFhRDSRcQndHpBkw166rM+6H3IHewJyYZBNvesltVBuSGtmJx57QI63CgCTUiu/UmWlHKmGuK5pHbMJlkREWJnVYqT3WIoB7MCX19bhLWxfbcLO+pipr8jrrjUF0skOLwg7HxnqHDk6oLyN4eLgn3Kr70zCCAQIGCSqGSIb3DQEHAaCB9ASB8TCB7jCB6wYLKoZIhvcNAQwKAQKggbQwgbEwHAYKKoZIhvcNAQwBAzAOBAgCgEDjD1kMngICCAAEgZCwn6xW0rtwHctlMsJw20caSgWcFTLcNBTgISSri2XLMeJfvygcgFbO7/zT64stk1tVZRktjAX/fELsFp4Xw/UspdVG6CgsRE7QcY+CT8wn6dvusvU2mv3KpI7NwrXmUMsKNbW5N8Qh37WYTCg5mvA7jFAazC+RnKgoMvMVnQbuT1CMJ3in7lPIsPTW3ub0188xJTAjBgkqhkiG9w0BCRUxFgQU8ZGlcfqIeitY4nkiNU7TX5gEi6MwMTAhMAkGBSsOAwIaBQAEFCBiCE2z1g+P8yPQTFy79/Pahq/lBAixZy/UGOLmVQICCAA=
-ca-passphrase = rixCloudPKI
+# ca-p12 = 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
+# ca-passphrase = Flower
 
 [Proxy]
 DIRECT = direct
-Traffic: 0 GB / 100 GB = trojan, aliyun-gz.linkcubecloud.com, 8100, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-Expire: 2026-09-09 = trojan, aliyun-gz.linkcubecloud.com, 8100, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇭🇰 HKG 香港 01 = trojan, aliyun-gz.linkcubecloud.com, 8100, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇭🇰 HKG 香港 02 = trojan, aliyun-gz.linkcubecloud.com, 8101, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇭🇰 HKG 香港 03 = trojan, aliyun-gz.linkcubecloud.com, 8103, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇭🇰 HKG 香港 04 = trojan, aliyun-gz.linkcubecloud.com, 8102, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇭🇰 HKG 香港 05 = trojan, aliyun-gz.linkcubecloud.com, 8104, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇭🇰 HKG 香港 06 = trojan, aliyun-gz.linkcubecloud.com, 8105, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇭🇰 HKG 香港 07 = trojan, aliyun-gz.linkcubecloud.com, 8107, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇭🇰 HKG 香港 08 = trojan, aliyun-gz.linkcubecloud.com, 8106, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇯🇵 JPN 日本 01 = trojan, aliyun-sh.linkcubecloud.com, 8200, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇯🇵 JPN 日本 02 = trojan, aliyun-sh.linkcubecloud.com, 8201, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇯🇵 JPN 日本 03 = trojan, aliyun-sh.linkcubecloud.com, 8203, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇯🇵 JPN 日本 04 = trojan, aliyun-sh.linkcubecloud.com, 8202, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇯🇵 JPN 日本 05 = trojan, aliyun-sh.linkcubecloud.com, 8204, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇯🇵 JPN 日本 06 = trojan, aliyun-sh.linkcubecloud.com, 8205, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇯🇵 JPN 日本 07 = trojan, aliyun-sh.linkcubecloud.com, 8207, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇯🇵 JPN 日本 08 = trojan, aliyun-sh.linkcubecloud.com, 8206, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇸🇬 SGP 狮城 01 = trojan, aliyun-gz.linkcubecloud.com, 8300, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇸🇬 SGP 狮城 02 = trojan, aliyun-gz.linkcubecloud.com, 8302, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇸🇬 SGP 狮城 03 = trojan, aliyun-gz.linkcubecloud.com, 8306, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇸🇬 SGP 狮城 04 = trojan, aliyun-gz.linkcubecloud.com, 8301, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇸🇬 SGP 狮城 05 = trojan, aliyun-gz.linkcubecloud.com, 8304, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇸🇬 SGP 狮城 06 = trojan, aliyun-gz.linkcubecloud.com, 8307, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇸🇬 SGP 狮城 07 = trojan, aliyun-gz.linkcubecloud.com, 8303, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇸🇬 SGP 狮城 08 = trojan, aliyun-gz.linkcubecloud.com, 8305, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇨🇳 TWN 台湾 01 = trojan, aliyun-gz.linkcubecloud.com, 8400, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇨🇳 TWN 台湾 02 = trojan, aliyun-gz.linkcubecloud.com, 8401, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇺🇸 USA 美国 01 = trojan, aliyun-sh.linkcubecloud.com, 8500, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇺🇸 USA 美国 02 = trojan, aliyun-sh.linkcubecloud.com, 8501, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇺🇸 USA 美国 03 = trojan, aliyun-sh.linkcubecloud.com, 8503, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇺🇸 USA 美国 04 = trojan, aliyun-sh.linkcubecloud.com, 8502, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇺🇸 USA 美国 05 = trojan, aliyun-sh.linkcubecloud.com, 8504, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇺🇸 USA 美国 06 = trojan, aliyun-sh.linkcubecloud.com, 8505, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇺🇸 USA 美国 07 = trojan, aliyun-sh.linkcubecloud.com, 8507, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇺🇸 USA 美国 08 = trojan, aliyun-sh.linkcubecloud.com, 8506, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇬🇧 GBR 英国 01 = trojan, aliyun-bj.linkcubecloud.com, 8600, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇬🇧 GBR 英国 02 = trojan, aliyun-bj.linkcubecloud.com, 8601, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇩🇪 DEU 德国 01 = trojan, aliyun-bj.linkcubecloud.com, 8602, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇩🇪 DEU 德国 02 = trojan, aliyun-bj.linkcubecloud.com, 8603, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇳🇱 NLD 荷兰 01 = trojan, aliyun-bj.linkcubecloud.com, 8604, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇳🇱 NLD 荷兰 02 = trojan, aliyun-bj.linkcubecloud.com, 8605, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇦🇷 ARG 阿根廷 01 = trojan, aliyun-sh.linkcubecloud.com, 8606, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇧🇷 BRA 巴西 01 = trojan, aliyun-sh.linkcubecloud.com, 8607, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇰🇷 KOR 韩国 01 = trojan, aliyun-sh.linkcubecloud.com, 8608, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇰🇷 KOR 韩国 02 = trojan, aliyun-sh.linkcubecloud.com, 8609, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇦🇺 AUS 澳洲 01 = trojan, aliyun-gz.linkcubecloud.com, 8610, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇮🇳 IND 印度 01 = trojan, aliyun-gz.linkcubecloud.com, 8611, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇨🇦 CAN 加拿大 01 = trojan, aliyun-sh.linkcubecloud.com, 8612, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇷🇺 RUS 俄罗斯 01 = trojan, aliyun-bj.linkcubecloud.com, 8613, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
-🇹🇷 TUR 土耳其 01 = trojan, aliyun-bj.linkcubecloud.com, 8614, password=27A2AA1D-2876-CC3B-2C93-A2A1A2F28C95, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+Traffic: 0 GB / 100 GB = trojan, aliyun-gz.linkcubecloud.com, 8101, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+Expire: 2026-11-14 = trojan, aliyun-gz.linkcubecloud.com, 8101, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇭🇰 HKG 香港 01 = trojan, aliyun-gz.linkcubecloud.com, 8101, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇭🇰 HKG 香港 02 = trojan, aliyun-gz.linkcubecloud.com, 8102, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇭🇰 HKG 香港 03 = trojan, aliyun-gz.linkcubecloud.com, 8103, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇭🇰 HKG 香港 04 = trojan, aliyun-gz.linkcubecloud.com, 8100, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇭🇰 HKG 香港 05 = trojan, aliyun-gz.linkcubecloud.com, 8105, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇭🇰 HKG 香港 06 = trojan, aliyun-gz.linkcubecloud.com, 8106, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇭🇰 HKG 香港 07 = trojan, aliyun-gz.linkcubecloud.com, 8107, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇭🇰 HKG 香港 08 = trojan, aliyun-gz.linkcubecloud.com, 8104, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇯🇵 JPN 日本 01 = trojan, aliyun-sh.linkcubecloud.com, 8201, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇯🇵 JPN 日本 02 = trojan, aliyun-sh.linkcubecloud.com, 8202, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇯🇵 JPN 日本 03 = trojan, aliyun-sh.linkcubecloud.com, 8203, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇯🇵 JPN 日本 04 = trojan, aliyun-sh.linkcubecloud.com, 8200, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇯🇵 JPN 日本 05 = trojan, aliyun-sh.linkcubecloud.com, 8205, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇯🇵 JPN 日本 06 = trojan, aliyun-sh.linkcubecloud.com, 8206, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇯🇵 JPN 日本 07 = trojan, aliyun-sh.linkcubecloud.com, 8207, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇯🇵 JPN 日本 08 = trojan, aliyun-sh.linkcubecloud.com, 8204, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇸🇬 SGP 狮城 01 = trojan, aliyun-gz.linkcubecloud.com, 8301, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇸🇬 SGP 狮城 02 = trojan, aliyun-gz.linkcubecloud.com, 8304, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇸🇬 SGP 狮城 03 = trojan, aliyun-gz.linkcubecloud.com, 8305, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇸🇬 SGP 狮城 04 = trojan, aliyun-gz.linkcubecloud.com, 8303, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇸🇬 SGP 狮城 05 = trojan, aliyun-gz.linkcubecloud.com, 8307, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇸🇬 SGP 狮城 06 = trojan, aliyun-gz.linkcubecloud.com, 8306, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇸🇬 SGP 狮城 07 = trojan, aliyun-gz.linkcubecloud.com, 8300, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇸🇬 SGP 狮城 08 = trojan, aliyun-gz.linkcubecloud.com, 8302, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇨🇳 TWN 台湾 01 = trojan, aliyun-gz.linkcubecloud.com, 8400, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇨🇳 TWN 台湾 02 = trojan, aliyun-gz.linkcubecloud.com, 8401, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇺🇸 USA 美国 01 = trojan, aliyun-sh.linkcubecloud.com, 8501, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇺🇸 USA 美国 02 = trojan, aliyun-sh.linkcubecloud.com, 8502, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇺🇸 USA 美国 03 = trojan, aliyun-sh.linkcubecloud.com, 8503, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇺🇸 USA 美国 04 = trojan, aliyun-sh.linkcubecloud.com, 8500, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇺🇸 USA 美国 05 = trojan, aliyun-sh.linkcubecloud.com, 8505, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇺🇸 USA 美国 06 = trojan, aliyun-sh.linkcubecloud.com, 8506, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇺🇸 USA 美国 07 = trojan, aliyun-sh.linkcubecloud.com, 8507, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇺🇸 USA 美国 08 = trojan, aliyun-sh.linkcubecloud.com, 8504, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇬🇧 GBR 英国 01 = trojan, aliyun-bj.linkcubecloud.com, 8600, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇬🇧 GBR 英国 02 = trojan, aliyun-bj.linkcubecloud.com, 8601, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇩🇪 DEU 德国 01 = trojan, aliyun-bj.linkcubecloud.com, 8602, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇩🇪 DEU 德国 02 = trojan, aliyun-bj.linkcubecloud.com, 8603, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇳🇱 NLD 荷兰 01 = trojan, aliyun-bj.linkcubecloud.com, 8604, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇳🇱 NLD 荷兰 02 = trojan, aliyun-bj.linkcubecloud.com, 8605, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇦🇷 ARG 阿根廷 01 = trojan, aliyun-sh.linkcubecloud.com, 8606, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇧🇷 BRA 巴西 01 = trojan, aliyun-sh.linkcubecloud.com, 8607, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇰🇷 KOR 韩国 01 = trojan, aliyun-sh.linkcubecloud.com, 8608, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇰🇷 KOR 韩国 02 = trojan, aliyun-sh.linkcubecloud.com, 8609, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇦🇺 AUS 澳洲 01 = trojan, aliyun-gz.linkcubecloud.com, 8610, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇮🇳 IND 印度 01 = trojan, aliyun-gz.linkcubecloud.com, 8611, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇨🇦 CAN 加拿大 01 = trojan, aliyun-sh.linkcubecloud.com, 8612, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇷🇺 RUS 俄罗斯 01 = trojan, aliyun-bj.linkcubecloud.com, 8613, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
+🇹🇷 TUR 土耳其 01 = trojan, aliyun-bj.linkcubecloud.com, 8614, password=4E555396-D08D-0D4F-9985-AB83582D23C6, sni=cos.ap-guangzhou.myqcloud.com, skip-cert-verify=true, tfo=true, udp-relay=true
 
 [Proxy Group]
-Proxies = select,HK,JP,SG,TW,US,Traffic: 0 GB / 100 GB,Expire: 2026-09-09,🇭🇰 HKG 香港 01,🇭🇰 HKG 香港 02,🇭🇰 HKG 香港 03,🇭🇰 HKG 香港 04,🇭🇰 HKG 香港 05,🇭🇰 HKG 香港 06,🇭🇰 HKG 香港 07,🇭🇰 HKG 香港 08,🇯🇵 JPN 日本 01,🇯🇵 JPN 日本 02,🇯🇵 JPN 日本 03,🇯🇵 JPN 日本 04,🇯🇵 JPN 日本 05,🇯🇵 JPN 日本 06,🇯🇵 JPN 日本 07,🇯🇵 JPN 日本 08,🇸🇬 SGP 狮城 01,🇸🇬 SGP 狮城 02,🇸🇬 SGP 狮城 03,🇸🇬 SGP 狮城 04,🇸🇬 SGP 狮城 05,🇸🇬 SGP 狮城 06,🇸🇬 SGP 狮城 07,🇸🇬 SGP 狮城 08,🇨🇳 TWN 台湾 01,🇨🇳 TWN 台湾 02,🇺🇸 USA 美国 01,🇺🇸 USA 美国 02,🇺🇸 USA 美国 03,🇺🇸 USA 美国 04,🇺🇸 USA 美国 05,🇺🇸 USA 美国 06,🇺🇸 USA 美国 07,🇺🇸 USA 美国 08,🇬🇧 GBR 英国 01,🇬🇧 GBR 英国 02,🇩🇪 DEU 德国 01,🇩🇪 DEU 德国 02,🇳🇱 NLD 荷兰 01,🇳🇱 NLD 荷兰 02,🇦🇷 ARG 阿根廷 01,🇧🇷 BRA 巴西 01,🇰🇷 KOR 韩国 01,🇰🇷 KOR 韩国 02,🇦🇺 AUS 澳洲 01,🇮🇳 IND 印度 01,🇨🇦 CAN 加拿大 01,🇷🇺 RUS 俄罗斯 01,🇹🇷 TUR 土耳其 01
+Proxies = select,HK,JP,SG,TW,US,Traffic: 0 GB / 100 GB,Expire: 2026-11-14,🇭🇰 HKG 香港 01,🇭🇰 HKG 香港 02,🇭🇰 HKG 香港 03,🇭🇰 HKG 香港 04,🇭🇰 HKG 香港 05,🇭🇰 HKG 香港 06,🇭🇰 HKG 香港 07,🇭🇰 HKG 香港 08,🇯🇵 JPN 日本 01,🇯🇵 JPN 日本 02,🇯🇵 JPN 日本 03,🇯🇵 JPN 日本 04,🇯🇵 JPN 日本 05,🇯🇵 JPN 日本 06,🇯🇵 JPN 日本 07,🇯🇵 JPN 日本 08,🇸🇬 SGP 狮城 01,🇸🇬 SGP 狮城 02,🇸🇬 SGP 狮城 03,🇸🇬 SGP 狮城 04,🇸🇬 SGP 狮城 05,🇸🇬 SGP 狮城 06,🇸🇬 SGP 狮城 07,🇸🇬 SGP 狮城 08,🇨🇳 TWN 台湾 01,🇨🇳 TWN 台湾 02,🇺🇸 USA 美国 01,🇺🇸 USA 美国 02,🇺🇸 USA 美国 03,🇺🇸 USA 美国 04,🇺🇸 USA 美国 05,🇺🇸 USA 美国 06,🇺🇸 USA 美国 07,🇺🇸 USA 美国 08,🇬🇧 GBR 英国 01,🇬🇧 GBR 英国 02,🇩🇪 DEU 德国 01,🇩🇪 DEU 德国 02,🇳🇱 NLD 荷兰 01,🇳🇱 NLD 荷兰 02,🇦🇷 ARG 阿根廷 01,🇧🇷 BRA 巴西 01,🇰🇷 KOR 韩国 01,🇰🇷 KOR 韩国 02,🇦🇺 AUS 澳洲 01,🇮🇳 IND 印度 01,🇨🇦 CAN 加拿大 01,🇷🇺 RUS 俄罗斯 01,🇹🇷 TUR 土耳其 01
 YouTube = select,Proxies,HK,JP,SG,TW,US
 Disney = select,Proxies,HK,JP,SG,TW,US
 Hbomax = select,Proxies,HK,JP,SG,TW,US
