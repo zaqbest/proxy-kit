@@ -1,0 +1,811 @@
+#!MANAGED-CONFIG https://1da5d8a2743d.ai-163cdn.com/sub?emoji=true&filename=YToo&scv=true&surge.doh=true&target=surge&tfo=false&url=https%3A%2F%2Fapi.ytoo.xyz%2Fosubscribe.php%3Fsid%3D178495%26token%3D2pqjXj1TuIspTtYvR88p&ver=4 interval=864000 strict=false
+
+[General]
+dns-server=119.29.29.29,223.5.5.5
+use-local-host-item-for-proxy=true
+bypass-system = true
+skip-proxy = 127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,100.64.0.0/10,17.0.0.0/8,localhost,*.local,passenger.t3go.cn
+bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.0.0.0/24,192.0.2.0/24,192.88.99.0/24,192.168.0.0/16,198.18.0.0/15,198.51.100.0/24,203.0.113.0/24,224.0.0.0/4,255.255.255.255/32
+doh-server = https://dns.alidns.com/dns-query, https://doh.pub/dns-query
+hijack-dns = 8.8.8.8:53, 8.8.4.4:53
+loglevel = notify
+replica = false
+tls-provider = default
+show-error-page-for-reject = true
+exclude-simple-hostnames = true
+always-raw-tcp-hosts = www.google.com, 91.108.4.*, 91.108.5.*, 91.108.6.*, 91.108.7.*, 91.108.8.*, 91.108.9.*, 91.108.1*.*, 91.108.5*, 91.108.6*, 91.108.7*, 149.154.16*, 149.154.17*, 185.76.151.*
+always-real-ip = *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com, msftconnecttest.com, msftncsi.com, *.msftconnecttest.com, *.msftncsi.com, *.battlenet.com.cn, *.battlenet.com, *.blzstatic.cn, *.battle.net
+internet-test-url = http://www.aliyun.com
+proxy-test-url = http://www.gstatic.com/generate_204
+# iOS Only
+allow-wifi-access = true
+wifi-access-http-port = 6152
+wifi-access-socks5-port = 6153
+# macOS Only
+http-listen = 0.0.0.0:6152
+socks5-listen = 0.0.0.0:6153
+enhanced-mode-by-rule = false
+
+[SSID Setting]
+TYPE:CELLULAR tfo-behaviour=force-enabled, cellular-fallback=off
+TYPE:WIFI tfo-behaviour=force-enabled, cellular-fallback=off
+
+[Rule]
+# Proxy
+PROCESS-NAME,v2ray,DIRECT
+PROCESS-NAME,ss-local,DIRECT
+
+# YouTube UDP REJECT
+AND,((PROTOCOL,UDP),(DEST-PORT,443)),REJECT-NO-DROP
+
+# Zhihu
+DOMAIN,appcloud.zhihu.com,REJECT
+DOMAIN,appcloud2.in.zhihu.com,REJECT
+DOMAIN,crash2.zhihu.com,REJECT
+DOMAIN,mqtt.zhihu.com,REJECT
+DOMAIN,sugar.zhihu.com,REJECT
+URL-REGEX,^https?:\/\/api\.zhihu\.com\/brand\/question\/\d+/card\?,REJECT
+URL-REGEX,^https?:\/\/api\.zhihu\.com\/commercial_api\/launch_v2\?,REJECT
+URL-REGEX,^https?:\/\/api\.zhihu\.com\/commercial_api\/real_time_launch_v2\?,REJECT
+URL-REGEX,^https?:\/\/www\.zhihu\.com\/api\/v\d+\/brand\/question/\d+/card\?,REJECT
+
+DOMAIN-SUFFIX,ping0.cc,DIRECT
+RULE-SET,https://1da5d8a2743d.ai-163cdn.com/getruleset?type=1&url=cnVsZXMvbG9jYWwvVW5icmVhay5saXN0,DIRECT,update-interval=86400
+RULE-SET,https://1da5d8a2743d.ai-163cdn.com/getruleset?type=1&url=cnVsZXMvbG9jYWwvU3RlYW1Eb3dubG9hZC5saXN0,DIRECT,update-interval=86400
+RULE-SET,https://1da5d8a2743d.ai-163cdn.com/getruleset?type=1&url=cnVsZXMvbG9jYWwvUHJpdmF0ZVRyYWNrZXIubGlzdA,DIRECT,update-interval=86400
+RULE-SET,https://1da5d8a2743d.ai-163cdn.com/getruleset?type=1&url=cnVsZXMvbG9jYWwvQXBwbGVGaXJtd2FyZS5saXN0,DIRECT,update-interval=86400
+RULE-SET,https://1da5d8a2743d.ai-163cdn.com/getruleset?type=1&url=cnVsZXMvbG9jYWwvQXBwbGVQdXNoLmxpc3Q,Apple Push,update-interval=86400
+RULE-SET,https://1da5d8a2743d.ai-163cdn.com/getruleset?type=1&url=cnVsZXMvbG9jYWwvV2lGaUNhbGxpbmcubGlzdA,Proxies,update-interval=86400
+RULE-SET,https://1da5d8a2743d.ai-163cdn.com/getruleset?type=1&url=cnVsZXMvbG9jYWwvU3BlZWR0ZXN0Lmxpc3Q,Proxies,update-interval=86400
+RULE-SET,https://1da5d8a2743d.ai-163cdn.com/getruleset?type=1&url=cnVsZXMvbG9jYWwvQ2xvdWRmbGFyZS5saXN0,Cloudflare,update-interval=86400
+RULE-SET,https://1da5d8a2743d.ai-163cdn.com/getruleset?type=1&url=cnVsZXMvbG9jYWwvWW91VHViZS5saXN0,YouTube,update-interval=86400
+RULE-SET,https://1da5d8a2743d.ai-163cdn.com/getruleset?type=1&url=cnVsZXMvbG9jYWwvRGlzbmV5UGx1cy5saXN0,Disney,update-interval=86400
+RULE-SET,https://1da5d8a2743d.ai-163cdn.com/getruleset?type=1&url=cnVsZXMvbG9jYWwvSEJPLVVTQS5saXN0,Hbomax,update-interval=86400
+RULE-SET,https://1da5d8a2743d.ai-163cdn.com/getruleset?type=1&url=cnVsZXMvbG9jYWwvTmV0ZmxpeC5saXN0,Netflix,update-interval=86400
+RULE-SET,https://1da5d8a2743d.ai-163cdn.com/getruleset?type=1&url=cnVsZXMvbG9jYWwvQmFoYW11dC5saXN0,Bahamut,update-interval=86400
+RULE-SET,https://1da5d8a2743d.ai-163cdn.com/getruleset?type=1&url=cnVsZXMvbG9jYWwvU3RyZWFtaW5nU0UubGlzdA,Bilibili,update-interval=86400
+RULE-SET,https://1da5d8a2743d.ai-163cdn.com/getruleset?type=1&url=cnVsZXMvbG9jYWwvU3BvdGlmeS5saXN0,Spotify,update-interval=86400
+RULE-SET,https://1da5d8a2743d.ai-163cdn.com/getruleset?type=1&url=cnVsZXMvbG9jYWwvU3RlYW0ubGlzdA,Steam,update-interval=86400
+RULE-SET,https://1da5d8a2743d.ai-163cdn.com/getruleset?type=1&url=cnVsZXMvbG9jYWwvVGVsZWdyYW0ubGlzdA,Telegram,update-interval=86400
+RULE-SET,https://1da5d8a2743d.ai-163cdn.com/getruleset?type=1&url=cnVsZXMvbG9jYWwvR29vZ2xlLmxpc3Q,Google,update-interval=86400
+RULE-SET,https://1da5d8a2743d.ai-163cdn.com/getruleset?type=1&url=cnVsZXMvbG9jYWwvTWljcm9zb2Z0Lmxpc3Q,Microsoft,update-interval=86400
+RULE-SET,https://1da5d8a2743d.ai-163cdn.com/getruleset?type=1&url=cnVsZXMvbG9jYWwvT3BlbkFJLmxpc3Q,OpenAI,update-interval=86400
+RULE-SET,https://1da5d8a2743d.ai-163cdn.com/getruleset?type=1&url=cnVsZXMvbG9jYWwvUGF5UGFsLmxpc3Q,PayPal,update-interval=86400
+RULE-SET,https://1da5d8a2743d.ai-163cdn.com/getruleset?type=1&url=cnVsZXMvbG9jYWwvQXBwbGUubGlzdA,Apple,update-interval=86400
+RULE-SET,https://1da5d8a2743d.ai-163cdn.com/getruleset?type=1&url=cnVsZXMvbG9jYWwvR2xvYmFsLmxpc3Q,Proxies,update-interval=86400
+RULE-SET,https://1da5d8a2743d.ai-163cdn.com/getruleset?type=1&url=cnVsZXMvbG9jYWwvSlAubGlzdA,JP,update-interval=86400
+RULE-SET,https://1da5d8a2743d.ai-163cdn.com/getruleset?type=1&url=cnVsZXMvbG9jYWwvQ2hpbmEubGlzdA,DIRECT,update-interval=86400
+RULE-SET,https://1da5d8a2743d.ai-163cdn.com/getruleset?type=1&url=cnVsZXMvbG9jYWwvTG9jYWxBcmVhTmV0d29yay5saXN0,DIRECT,update-interval=86400
+GEOIP,CN,DIRECT
+FINAL,Final
+
+[URL Rewrite]
+# AbeamTV Unlock
+^https?:\/\/api\.[\w-]+\.abema-tv\.com\/v\d\/ip\/check - reject
+^https?:\/\/api\.abema\.io\/v\d\/ip\/check - reject
+
+# Redirect Google Service
+^https?:\/\/(www.)?g\.cn https://www.google.com 302
+^https?:\/\/(www.)?google\.cn https://www.google.com 302
+
+# Redirect HTTP to HTTPS
+^https?:\/\/(www.)?taobao\.com\/ https://www.taobao.com/ 302
+^https?:\/\/(www.)?jd\.com\/ https://www.jd.com/ 302
+^https?:\/\/(www.)?mi\.com\/ https://www.mi.com/ 302
+^https?:\/\/you\.163\.com\/ https://you.163.com/ 302
+^https?:\/\/(www.)?suning\.com/ https://suning.com/ 302
+^https?:\/\/(www.)?yhd\.com https://yhd.com/ 302
+
+# Redirect False to True
+# >> IGN China to IGN Global
+^https?:\/\/(www.)?ign\.xn--fiqs8s\/ http://cn.ign.com/ccpref/us 302
+# >> Fake Website Made By Makeding
+^https?:\/\/(www.)?abbyychina\.com\/ http://www.abbyy.cn/ 302
+^https?:\/\/(www.)?bartender\.cc\/ https://cn.seagullscientific.com 302
+^https?:\/\/(www.)?betterzip\.net\/ https://macitbetter.com/ 302
+^https?:\/\/(www.)?beyondcompare\.cc\/ https://www.scootersoftware.com/ 302
+^https?:\/\/(www.)?bingdianhuanyuan\.cn\/ http://www.faronics.com/zh-hans/ 302
+^https?:\/\/(www.)?chemdraw\.com\.cn\/ http://www.cambridgesoft.com/ 302
+^https?:\/\/(www.)?codesoftchina\.com\/ https://www.teklynx.com/ 302
+^https?:\/\/(www.)?coreldrawchina\.com\/ https://www.coreldraw.com/cn/ 302
+^https?:\/\/(www.)?crossoverchina\.com\/ https://www.codeweavers.com/ 302
+^https?:\/\/(www.)?easyrecoverychina\.com\/ https://www.ontrack.com/ 302
+^https?:\/\/(www.)?ediuschina\.com\/ https://www.grassvalley.com/ 302
+^https?:\/\/(www.)?flstudiochina\.com\/ https://www.image-line.com/flstudio/ 302
+^https?:\/\/(www.)?formysql\.com\/ https://www.navicat.com.cn 302
+^https?:\/\/(www.)?guitarpro\.cc\/ https://www.guitar-pro.com/ 302
+^https?:\/\/(www.)?huishenghuiying\.com\.cn\/ https://www.corel.com/cn/ 302
+^https?:\/\/(www.)?iconworkshop\.cn\/ https://www.axialis.com/iconworkshop/ 302
+^https?:\/\/(www.)?imindmap\.cc\/ https://imindmap.com/zh-cn/ 302
+^https?:\/\/(www.)?jihehuaban\.com\.cn\/ https://sketch.io/ 302
+^https?:\/\/(www.)?keyshot\.cc\/ https://www.keyshot.com/ 302
+^https?:\/\/(www.)?mathtype\.cn\/ http://www.dessci.com/en/products/mathtype/ 302
+^https?:\/\/(www.)?mindmanager\.cc\/ https://www.mindjet.com/ 302
+^https?:\/\/(www.)?mindmapper\.cc\/ https://mindmapper.com 302
+^https?:\/\/(www.)?mycleanmymac\.com\/ https://macpaw.com/cleanmymac 302
+^https?:\/\/(www.)?nicelabel\.cc\/ https://www.nicelabel.com/ 302
+^https?:\/\/(www.)?ntfsformac\.cc\/ https://www.tuxera.com/products/tuxera-ntfs-for-mac-cn/ 302
+^https?:\/\/(www.)?ntfsformac\.cn\/ https://www.paragon-software.com/ufsdhome/zh/ntfs-mac/ 302
+^https?:\/\/(www.)?overturechina\.com\/ https://sonicscores.com/overture/ 302
+^https?:\/\/(www.)?passwordrecovery\.cn\/ https://cn.elcomsoft.com/aopr.html 302
+^https?:\/\/(www.)?pdfexpert\.cc\/ https://pdfexpert.com/zh 302
+^https?:\/\/(www.)?ultraiso\.net\/ https://cn.ezbsystems.com/ultraiso/ 302
+^https?:\/\/(www.)?vegaschina\.cn\/ https://www.vegas.com/ 302
+^https?:\/\/(www.)?xmindchina\.net\/ https://www.xmind.cn/ 302
+^https?:\/\/(www.)?xshellcn\.com\/ https://www.netsarang.com/products/xsh_overview.html 302
+^https?:\/\/(www.)?yuanchengxiezuo\.com\/ https://www.teamviewer.com/zhcn/ 302
+^https?:\/\/(www.)?zbrushcn\.com\/ http://pixologic.com/ 302
+^https://aweme-eagle(.*)\.snssdk\.com/aweme/v2/ https://aweme-eagle$1.snssdk.com/aweme/v1/ 302
+
+# JD Protection
+^https?:\/\/coupon\.m\.jd\.com\/ https://coupon.m.jd.com/ 302
+^https?:\/\/h5\.m\.jd\.com\/ https://h5.m.jd.com/ 302
+^https?:\/\/item\.m\.jd\.com\/ https://item.m.jd.com/ 302
+^https?:\/\/m\.jd\.com\/ https://m.jd.com/ 302
+^https?:\/\/newcz\.m\.jd\.com\/ https://newcz.m.jd.com/ 302
+^https?:\/\/p\.m\.jd\.com\/ https://p.m.jd.com/ 302
+^https?:\/\/so\.m\.jd\.com\/ https://so.m.jd.com/ 302
+^https?:\/\/union\.click\.jd\.com\/jda? http://union.click.jd.com/jda?adblock= header
+^https?:\/\/union\.click\.jd\.com\/sem.php? http://union.click.jd.com/sem.php?adblock= header
+^https?:\/\/www.jd.com\/ https://www.jd.com/ 302
+
+# Wiki
+# ^https://zh.(m.)?wikipedia.org/zh(-\w*)?(?=/) https://www.wikiwand.com/zh$2 302
+# ^https://(\w*).(m.)?wikipedia.org/wiki https://www.wikiwand.com/$1 302
+
+# Resso
+
+(?<=(carrier|account|sys|sim)_region=)cn in 307
+
+# Advertising Block
+
+# >> 2048Puzzle
+^https?:\/\/a\.applovin\.com\/3\.0\/ad - reject
+
+# >> 4gTV
+^https?:\/\/service\.4gtv\.tv\/4gtv\/Data\/GetAD - reject
+^https?:\/\/service\.4gtv\.tv\/4gtv\/Data\/ADLog - reject
+
+# >> 58
+^https?:\/\/.+\.58cdn\.com\.cn\/brandads\/ - reject
+^https?:\/\/app\.58\.com\/api\/home\/advertising\/ - reject
+^https?:\/\/app\.58\.com\/api\/home\/appadv\/ - reject
+^https?:\/\/app\.58\.com\/api\/home\/invite\/popupAdv - reject
+^https?:\/\/app\.58\.com\/api\/log\/ - reject
+
+# >> AcFun
+^https?:\/\/aes\.acfun\.cn\/s\?adzones - reject
+
+# >> Ai NanNing
+^https?:\/\/nnapp\.cloudbae\.cn\/mc\/api\/advert/ - reject
+
+# >> Aihuishou
+^https?:\/\/gw\.aihuishou\.com\/app-portal\/home\/getadvertisement - reject
+
+# >> AMap
+^https?:\/\/m\d{1}\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/ - reject
+
+# >> Baicizhan
+^https?:\/\/7n\.bczcdn\.com\/launchad\/ - reject
+
+# >> Baidu
+^https?:\/\/.+\/client\/phpui2\/ - reject
+^https?:\/\/cover.baidu.com\/cover\/page\/dspSwitchAds\/ - reject
+^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule - reject
+^https?:\/\/issuecdn\.baidupcs\.com\/issue\/netdisk\/guanggao\/ - reject
+^https?:\/\/update\.pan\.baidu\.com\/statistics - reject
+
+# >> Baobao
+^https?:\/\/www\.myhug\.cn\/ad\/ - reject
+
+# >> Beike Zhaofang
+^https?:\/\/app\.api\.ke\.com\/config\/config\/bootpage - reject
+
+# >> Beitaicuhfang
+^https?:\/\/channel\.beitaichufang\.com\/channel\/api\/v\d\/promote\/ios\/start\/page - reject
+
+# >> Bi ShiJie
+^https?:\/\/iapi\.bishijie\.com\/actopen\/advertising\/ - reject
+
+# >> Bilibili
+^https?:\/\/app\.bilibili\.com\/x\/v\d\/splash\/ - reject
+
+# >> ByteDance
+^https?:\/\/.+\.(musical|snssdk)\.(com|ly)\/(api|motor)\/ad\/ - reject
+^https?:\/\/.+\.pstatp\.com\/img\/ad - reject
+^https?:\/\/.+\.snssdk\.com\/motor\/operation\/activity\/display\/config\/v\d\/ - reject
+^https?:\/\/dsp\.toutiao\.com\/api\/xunfei\/ads\/ - reject
+
+# >> CamScanner
+^https?:\/\/api\.intsig\.net\/user\/cs\/operating\/app\/get_startpic\/ - reject
+
+# >> Caocao Chuxin
+^https?:\/\/cap\.caocaokeji\.cn\/advert-bss\/ - reject
+
+# >> Chelaile
+^https?:\/\/(api|atrace)\.chelaile\.net\.cn\/adpub\/ - reject
+^https?:\/\/api\.chelaile\.net\.cn\/goocity\/advert\/ - reject
+^https?:\/\/atrace\.chelaile\.net\.cn\/exhibit\?&adv_image - reject
+^https?:\/\/pic1\.chelaile\.net\.cn\/adv\/ - reject
+
+# >> ChinaMobile
+^https?:\/\/app\.10086\.cn\/biz-orange\/DN\/(findSale|homeSale)\/getsaleAdver - reject
+
+# >> ChinaUnicom
+^https?:\/\/m\.client\.10010\.com\/mobileService\/customer\/accountListData\.htm - reject
+^https?:\/\/m\.client\.10010\.com\/uniAdmsInterface\/(getWelcomeAd|getHomePageAd) - reject
+
+# >> CNTV
+^https?:\/\/asp\.cntv\.myalicdn\.com\/.+\?maxbr=850 - reject
+^https?:\/\/cntv\.hls\.cdn\.myqcloud\.com\/.+\?maxbr=850 - reject
+^https?:\/\/v\.cctv\.com\/.+850 - reject
+^https?:\/\/www\.cntv\.cn\/nettv\/adp\/ - reject
+
+# >> DanDan Zan
+^https?:\/\/www\.dandanzan\.com\/res\/gdsefse\.js - reject
+
+# >> DangDang
+^https?:\/\/mapi\.dangdang\.com\/index\.php\?action=init - reject
+
+# >> DayDayCook
+^https?:\/\/api\.daydaycook\.com\.cn\/daydaycook\/server\/ad\/ - reject
+^https?:\/\/cms\.daydaycook\.com\.cn\/api\/cms\/advertisement\/ - reject
+
+# >> eLong
+^https?:\/\/mobile-api2011\.elong\.com\/(adgateway|adv)\/ - reject
+^https?:\/\/(2(5[0-5]{1}|[0-4]\d{1})|[0-1]?\d{1,2})(\.(2(5[0-5]{1}|[0-4]\d{1})|[0-1]?\d{1,2})){3}\/(adgateway|adv)\/ - reject
+
+# >> Facebook
+^https?:\/\/www\.facebook\.com\/.+video_click_to_advertiser_site - reject
+
+# >> Fliggy
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources\/ - reject
+
+# >> Flyer Tea
+^https?:\/\/www\.flyertea\.com\/source\/plugin\/mobile\/mobile\.php\?module=advis - reject
+
+# >> Foodie
+^https?:\/\/foodie-api\.yiruikecorp\.com\/v\d\/(banner|notice)\/overview - reject
+
+# >> FOTOABLE
+^https?:\/\/cdn\.api\.fotoable\.com\/Advertise\/ - reject
+
+# >> Gofun
+^https?:\/\/gateway\.shouqiev\.com\/fsda\/app\/bootImage\.json - reject
+
+# >> Google
+^https?:\/\/.+\.youtube\.com\/api\/stats\/.+adformat - reject
+^https?:\/\/.+\.youtube\.com\/api\/stats\/ads - reject
+^https?:\/\/.+\.youtube\.com\/get_midroll - reject
+^https?:\/\/.+\.youtube\.com\/get_midroll_ - reject
+^https?:\/\/.+\.youtube\.com\/pagead\/ - reject
+^https?:\/\/.+\.youtube\.com\/ptracking - reject
+^https?:\/\/.+\.youtube\.com\/ptracking\? - reject
+^https?:\/\/pagead2.googlesyndication.com\/pagead\/js\/? - reject
+^https?:\/\/pagead2.googlesyndication.com\/pagead\/js\/? - reject
+^https?:\/\/premiumyva\.appspot\.com\/vmclickstoadvertisersite - reject
+^https?:\/\/www.google-analytics.com\/analytics.js - reject
+^https?:\/\/www.google-analytics.com\/analytics.js - reject
+^https?:\/\/youtubei\.googleapis\.com/.+ad_break - reject
+^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+ad_ - reject
+^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+log_ - reject
+
+# >> Hangzhou Bus
+^https?:\/\/m\.ibuscloud.com\/v\d\/app\/getStartPage - reject
+
+# >> Hangzhou Citizen Card
+^https?:\/\/smkmp\.96225.com\/smkcenter\/ad/ - reject
+
+# >> Hupu
+^https?:\/\/games\.mobileapi\.hupu\.com\/.+\/(interfaceAdMonitor|interfaceAd)\/ - reject
+^https?:\/\/games\.mobileapi\.hupu\.com\/.+\/status\/init - reject
+
+# >> IdleFish
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.home\.welcome\/ - reject
+
+# >> iFlytek
+^https?:\/\/imeclient\.openspeech\.cn\/adservice\/ - reject
+
+# >> iQiyi
+^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show.do - reject
+^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v\d\/show - reject
+^https?:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo - reject
+^https?:\/\/t7z\.cupid\.iqiyi\.com\/mixer\? - reject
+
+# >> JD
+^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ - reject
+^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start - reject
+^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/base\/na\/m\/adInfo - reject
+
+# >> Jiemian
+^https?:\/\/img\.jiemian\.com\/ads\/ - reject
+
+# >> JXEDT
+^https?:\/\/api\.jxedt\.com\/ad\/ - reject
+^https?:\/\/richmanapi\.jxedt\.com\/api\/ad\/ - reject
+
+# >> Keep
+^https?:\/\/static1\.keepcdn\.com\/.+\d{3}x\d{4} - reject
+^https?:\/\/api\.gotokeep\.com\/ads\/ - reject
+
+# >> KFC
+^https?:\/\/res\.kfc\.com\.cn\/advertisement\/ - reject
+
+# >> Kingsoft
+^https?:/\/\counter\.ksosoft.com\/ad\.php - reject
+^https?:\/\/.+\.kingsoft-office-service\.com\/ad - reject
+^https?:\/\/counter\.ksosoft\.com\/ad\.php - reject
+^https?:\/\/dict-mobile\.iciba\.com\/interface\/index\.php\?.+(c=ad|collectFeedsAdShowCount|KSFeedsAdCardViewController) - reject
+^https?:\/\/ios\.wps\.cn\/ad-statistics-service - reject
+^https?:\/\/mobile-pic\.cache\.iciba\.com\/feeds_ad\/ - reject
+^https?:\/\/service\.iciba\.com\/popo\/open\/screens\/v\d\?adjson - reject
+
+# >> KouBei
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.o2o\.ad\.gateway\.get\/ - reject
+^https?:\/\/render\.alipay\.com\/p\/s\/h5data\/prod\/spring-festival-2019-h5data\/popup-h5data\.json - reject
+
+# >> Kuaikan Comic
+^https?:\/\/api\.kkmh\.com\/.+(ad|advertisement)\/ - reject
+
+# >> Kuwo
+^https?:\/\/(2(5[0-5]{1}|[0-4]\d{1})|[0-1]?\d{1,2})(\.(2(5[0-5]{1}|[0-4]\d{1})|[0-1]?\d{1,2})){3}\/EcomResourceServer/AdPlayPage/adinfo - reject
+^https?:\/\/(2(5[0-5]{1}|[0-4]\d{1})|[0-1]?\d{1,2})(\.(2(5[0-5]{1}|[0-4]\d{1})|[0-1]?\d{1,2})){3}\/MobileAdServer\/ - reject
+
+# >> Le
+^https?:\/\/.+\/letv-gug\/ - reject
+
+# >> Luckin Coffee
+^https?:\/\/.+\/resource\/m\/promo\/adsense - reject
+^https?:\/\/.+\/resource\/m\/sys\/app\/adpos - reject
+
+# >> MaFengWo
+^https?:\/\/mapi\.mafengwo\.cn\/ad\/ - reject
+^https?:\/\/mapi\.mafengwo\.cn\/travelguide\/ad\/ - reject
+
+# >> Mahua Video
+^https?:\/\/.+\/api\/app\/member\/ver2\/user\/login\/ - reject
+
+
+# >> Maiduidui
+^https?:\/\/mob\.mddcloud\.com\.cn\/api\/(ad|advert)\/ - reject
+
+# >> Manhuaren
+^https?:\/\/mangaapi\.manhuaren\.com\/v\d\/public\/getStartPageAds - reject
+
+
+# >> Meituan
+^https?:\/\/img\.meituan\.net\/midas\/ - reject
+^https?:\/\/p([0-9])\.meituan\.net\/(mmc|wmbanner)\/ - reject
+^https?:\/\/p\d{1}\.meituan\.net\/(adunion|display|linglong|mmc|wmbanner)\/ - reject
+^https?:\/\/s3plus\.meituan\.net\/.+\/linglong\/ - reject
+
+# >> Meiweibuyongdeng
+^https?:\/\/capi.mwee.cn/app-api/V12/app/getstartad - reject
+
+# >> MI
+^https?:\/\/api\.m\.mi\.com\/v\d\/app\/start - reject
+^https?:\/\/api\.jr\.mi\.com\/v\d\/adv\/ - reject
+^https?:\/\/api\.jr\.mi\.com\/jr\/api\/playScreen - reject
+
+# >> MI Fit
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/homepage_ad\? - reject
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sleep_ad\? - reject
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_ad\? - reject
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_summary_ad\? - reject
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_training_ad\? - reject
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/step_detail_ad\? - reject
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/training_video_ad\? - reject
+
+# >> Miaopai
+^https?:\/\/b-api\.ins\.miaopai\.com\/1\/ad/ - reject
+
+# >> MIgu
+^https?:\/\/.+\/v\d\/iflyad\/ - reject
+^https?:\/\/.+\/cdn-adn\/ - reject
+^https?:\/\/ggic\.cmvideo\.cn\/ad\/ - reject
+^https?:\/\/ggic2\.cmvideo\.cn\/ad\/ - reject
+^https?:\/\/.+/img\/ad\.union\.api\/ - reject
+
+# >> MixC
+^https?:\/\/app\.mixcapp\.com\/mixc\/api\/v\d\/ad - reject
+
+# >> MogoRenter
+^https?:\/\/api\.mgzf\.com\/renter-operation\/home\/startHomePage - reject
+
+# >> MojiWeather
+^https?:\/\/cdn\.moji\.com\/(adoss|adlink)\/ - reject
+
+# >> Myhug
+^https?:\/\/www\.myhug\.cn\/ad\/ - reject
+
+# >> NationalGeographic
+^https?:\/\/dili\.bdatu\.com\/jiekou\/ad\/ - reject
+
+# >> NationalGeographicChina
+^https?:\/\/wap\.ngchina\.cn\/news\/adverts\/ - reject
+
+# >> NetEase
+^https?:\/\/.+\/eapi\/(ad|log)\/ - reject
+^https?:\/\/client\.mail\.163\.com\/apptrack\/confinfo\/searchMultiAds - reject
+^https?:\/\/c\.m\.163\.com\/nc\/gl\/ - reject
+^https?:\/\/dsp-impr2\.youdao\.com\/adload.s\? - reject
+^https?:\/\/oimage([a-z])([0-9])\.ydstatic\.com\/.+adpublish - reject
+^https?:\/\/sp\.kaola\.com\/api\/openad - reject
+^https?:\/\/support\.you\.163\.com\/xhr\/boot\/getBootMedia\.json - reject
+
+# >> ofo
+^https?:\/\/supportda\.ofo\.com\/adaction\? - reject
+^https?:\/\/ma\.ofo\.com\/ads\/ - reject
+^https?:\/\/activity2\.api\.ofo\.com\/ofo\/Api\/v\d\/ads - reject
+^https?:\/\/ma\.ofo\.com\/adImage\/ - reject
+
+# >> PConline
+^https?:\/\/agent-count\.pconline\.com\.cn\/counter\/adAnalyse\/ - reject
+^https?:\/\/mrobot\.pcauto\.com\.cn\/v\d\/ad2p - reject
+^https?:\/\/mrobot\.pcauto\.com\.cn\/xsp\/s\/auto\/info\/preload\.xsp - reject
+^https?:\/\/mrobot\.pconline\.com\.cn\/s\/onlineinfo\/ad\/ - reject
+^https?:\/\/mrobot\.pconline\.com\.cn\/v\d\/ad2p - reject
+
+# >> PeanutWiFiMpass
+^https?:\/\/cmsapi\.wifi8\.com\/v\d{1}\/(emptyAd|adNew)\/ - reject
+
+# >> Qdaily
+^https?:\/\/app3\.qdaily\.com\/app3\/boot_advertisements\.json - reject
+^https?:\/\/notch\.qdaily\.com\/api\/v\d\/boot_ad - reject
+
+# >> Qiongou
+^https?:\/\/media\.qyer\.com\/ad\/ - reject
+^https?:\/\/open\.qyer.com\/qyer\/config\/get - reject
+^https?:\/\/open\.qyer\.com\/qyer\/startpage\/ - reject
+
+# >> Qiuduoduo
+^https?:\/\/api\.qiuduoduo\.cn\/guideimage - reject
+
+# >> Renren Video
+^https?:\/\/api\.rr\.tv\/ad\/ - reject
+^https?:\/\/api\.videozhishi\.com\/api\/getAdvertising - reject
+^https?:\/\/msspjh\.emarbox\.com\/getAdConfig - reject
+
+# >> ShiHuo
+^https?:\/\/www\.shihuo\.cn\/app3\/saveAppInfo - reject
+
+# >> 首汽约车
+^https?:\/\/gw-passenger\.01zhuanche\.com\/gw-passenger\/car-rest\/webservice\/passenger\/recommendADs - reject
+^https?:\/\/gw-passenger\.01zhuanche\.com\/gw-passenger\/zhuanche-passenger-token\/leachtoken\/webservice\/homepage\/queryADs - reject
+
+# >> Sina
+^https?:\/\/edit\.sinaapp\.com\/ua\?t=adv - reject
+
+# >> Sina Weather
+^https?:\/\/tqt\.weibo\.cn\/.+advert\.index - reject
+^https?:\/\/tqt\.weibo\.cn\/api\/advert\/ - reject
+^https?:\/\/tqt\.weibo\.cn\/overall\/redirect\.php\?r=tqtad - reject
+^https?:\/\/tqt\.weibo\.cn\/overall\/redirect\.php\?r=tqt_sdkad - reject
+
+# >> Sina Weibo
+^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkad\.php - reject
+^https?:\/\/wbapp\.uve\.weibo\.com\/wbapplua\/wbpullad\.lua - reject
+^https?:\/\/sdkapp\.uve\.weibo\.com/\interface\/sdk\/actionad\.php - reject
+
+# >> SMZDM
+^https?:\/\/api\.smzdm\.com\/v\d\/util\/loading - reject
+
+# >> Snail Sleep
+^https?:\/\/snailsleep\.net\/snail\/v\d\/adTask\/ - reject
+^https?:\/\/snailsleep\.net\/snail\/v\d\/screen\/qn\/get\? - reject
+
+# >> Sohu
+^https?:\/\/api\.k\.sohu\.com\/api\/news\/adsense - reject
+^https?:\/\/api\.tv\.sohu\.com\/agg\/api\/app\/config\/bootstrap - reject
+^https?:\/\/hui\.sohu\.com\/predownload2/\? - reject
+^https?:\/\/pic\.k\.sohu\.com\/img8\/wb\/tj\/ - reject
+^https?:\/\/s1\.api\.tv\.itc\.cn\/v\d\/mobile\/control\/switch\.json - reject
+
+# >> StarFans
+^https?:\/\/a\.sfansclub\.com\/business\/t\/ad\/ - reject
+^https?:\/\/a\.sfansclub\.com\/business\/t\/boot\/screen\/index - reject
+
+# >> TaPiaoPiao
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryadvertise\/ - reject
+
+# >> Tencent Futu Securities
+^https?:\/\/api5\.futunn\.com\/ad\/ - reject
+
+# >> Tencent Game
+^https?:\/\/qt\.qq\.com\/lua\/mengyou\/get_splash_screen_info - reject
+^https?:\/\/ssl\.kohsocialapp\.qq\.com:10001\/game\/buttons - reject
+
+# >> Tencent Maps
+^https?:\/\/3gimg\.qq\.com\/tencentMapTouch\/app\/activity\/ - reject
+^https?:\/\/newsso\.map\.qq\.com\/\?&attime= - reject
+
+# >> Tencent News
+^https?:\/\/r\.inews\.qq\.com\/adsBlacklist - reject
+^https?:\/\/r\.inews\.qq\.com\/getFullScreenPic - reject
+^https?:\/\/r\.inews\.qq\.com\/getQQNewsRemoteConfig - reject
+
+# >> Tencent QQLive
+^https?:\/\/.+\.mp4\?cdncode=.+&guid= - reject
+^https?:\/\/.+\.mp4\?cdncode=.+&sdtfrom=v3004 - reject
+^https?:\/\/btrace.qq.com - reject
+^https?:\/\/vv\.video\.qq\.com\/getvmind\? - reject
+
+# >> Tencent WeChat
+^https?:\/\/mp\.weixin\.qq.com\/mp\/advertisement_report - reject
+^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_complaint - reject
+^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_video - reject
+
+# >> The Paper
+^https?:\/\/adpai\.thepaper\.cn\/.+&ad= - reject
+
+# >> Thunder
+^https?:\/\/images\.client\.vip\.xunlei\.com\/.+\/advert\/ - reject
+
+# >> tskscn
+^https?:\/\/47\.97\.20\.12\/ad\/ - reject
+
+# >> TV_Home
+^https?:\/\/api\.gaoqingdianshi\.com\/api\/v\d\/ad\/ - reject
+
+# >> txffp
+^https?:\/\/pss\.txffp\.com\/piaogen\/images\/launchScreen/ - reject
+
+# >> UC
+^https?:\/\/huichuan\.sm\.cn\/jsad - reject
+^https?:\/\/iflow\.uczzd\.cn\/log\/ - reject
+
+# >> Variflight
+^https:\/\/app\.variflight\.com\/v4\/advert\/ - reject
+
+# >> VUE
+^https?:\/\/static\.vuevideo\.net\/styleAssets\/.+\/splash_ad - reject
+^https?:\/\/static\.vuevideo\.net\/styleAssets\/advertisement\/ - reject
+
+# >> WallStreetCN
+^https?:\/\/api\.wallstreetcn\.com\/apiv\d\/advertising\/ - reject
+
+# >> WeDoctor
+^https?:\/\/app\.wy\.guahao\.com\/json\/white\/dayquestion\/getpopad - reject
+
+# >> Weico
+^https?:\/\/overseas\.weico\.cc/portal\.php\?a=get_coopen_ads - reject
+
+# >> WeiDian
+^https?:\/\/thor\.weidian\.com\/ares\/home\.splash\/ - reject
+
+# >> WiFi Share Master
+^https?:\/\/nochange\.ggsafe\.com\/ad\/ - reject
+
+# >> WIFI8
+^https?:\/\/cmsapi\.wifi8\.com\/v\d\/emptyAd\/info - reject
+^https?:\/\/cmsapi\.wifi8\.com\/v\d\/adNew\/config - reject
+
+# >> Wuta Cam
+^https?:\/\/api-release\.wuta-cam\.com\/ad_tree - reject
+^https?:\/\/res-release\.wuta-cam\.com\/json\/ads_component_cache\.json - reject
+
+# >> Xiachufang
+^https?:\/\/api\.xiachufang\.com\/v\d\/ad/ - reject
+
+# >> Xiami music
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimusic\.common\.mobileservice\.startinit\/ - reject
+
+# >> Xianyu
+^https?:\/\/gw\.alicdn\.com\/mt\/ - reject
+^https?:\/\/gw\.alicdn\.com\/tfs\/.+\d{3,4}-\d{4} - reject
+^https?:\/\/gw\.alicdn\.com\/tps\/.+\d{3,4}-\d{4} - reject
+
+# >> Xiao Shuimian
+^https?:\/\/api\.psy-1\.com\/cosleep\/startup - reject
+
+# >> Ximalaya
+^https?:\/\/adse.+\.com\/[a-z]{4}\/loading\?appid= - reject
+^https?:\/\/adse\.ximalaya\.com\/ting\/feed\?appid= - reject
+^https?:\/\/adse\.ximalaya\.com\/ting\/loading\?appid= - reject
+^https?:\/\/adse\.ximalaya\.com\/ting\?appid= - reject
+^https?:\/\/fdfs\.xmcdn\.com\/group21\/M03\/E7\/3F\/ - reject
+^https?:\/\/fdfs\.xmcdn\.com\/group21\/M0A\/95\/3B\/ - reject
+^https?:\/\/fdfs\.xmcdn\.com\/group22\/M00\/92\/FF\/ - reject
+^https?:\/\/fdfs\.xmcdn\.com\/group22\/M05\/66\/67\/ - reject
+^https?:\/\/fdfs\.xmcdn\.com\/group22\/M07\/76\/54\/ - reject
+^https?:\/\/fdfs\.xmcdn\.com\/group23\/M01\/63\/F1\/ - reject
+^https?:\/\/fdfs\.xmcdn\.com\/group23\/M04\/E5\/F6\/ - reject
+^https?:\/\/fdfs\.xmcdn\.com\/group23\/M07\/81\/F6\/ - reject
+^https?:\/\/fdfs\.xmcdn\.com\/group23\/M0A\/75\/AA\/ - reject
+^https?:\/\/fdfs\.xmcdn\.com\/group24\/M03\/E6\/09\/ - reject
+^https?:\/\/fdfs\.xmcdn\.com\/group24\/M07\/C4\/3D\/ - reject
+^https?:\/\/fdfs\.xmcdn\.com\/group25\/M05\/92\/D1\/ - reject
+
+# >> Xunyou Booster
+^https?:\/\/portal-xunyou\.qingcdn\.com\/api\/v\d\/ios\/configs\/(splash_ad|ad_urls) - reject
+^https?:\/\/portal-xunyou\.qingcdn\.com\/api\/v\d{1}\/ios\/ads\/ - reject
+
+# >> Yahoo!
+^https?:\/\/m\.yap\.yahoo\.com\/v18\/getAds\.do - reject
+
+# >> Yingshi Cloud Video
+^https?:\/\/i\.ys7\.com\/api\/ads - reject
+
+# >> YOUKU
+^https?:\/\/.+\.mp4\?ccode=0902 - reject
+^https?:\/\/.+\.mp4\?sid= - reject
+
+# >> Youtube++
+^https?:\/\/api\.catch\.gift\/api\/v\d\/pagead\/ - reject
+
+# >> Yundongshijie
+^https?:\/\/.+\.iydsj\.com\/api\/.+\/ad - reject
+
+# >> YYeTs
+^https?:\/\/ctrl\.(playcvn|zmzapi)\.(com|net)\/app\/(ads|init) - reject
+
+# >> Zhiboba
+^https?:\/\/a\.qiumibao\.com\/activities\/config\.php - reject
+^https?:\/\/.+\/allOne\.php\?ad_name - reject
+
+# >> Zhihu
+^https?:\/\/www\.zhihu\.com\/terms\/privacy\/confirm - reject
+^https?:\/\/api\.zhihu\.com\/market\/popover - reject
+^https?:\/\/api\.zhihu\.com\/search\/(top|tab|preset) - reject
+^https?:\/\/api\.zhihu\.com\/(launch|ad-style-service|app_config|real_time|ab\/api) - reject
+^https?:\/\/api\.zhihu\.com\/commercial_api\/(launch|real_time) - reject
+^https?:\/\/(api|www)\.zhihu\.com\/.*(featured-comment-ad|recommendations|community-ad) - reject
+^https?:\/\/(api|www)\.zhihu\.com\/(fringe|adx|commercial|ad-style-service|banners|mqtt) - reject
+
+# >> Zhuishushenqi
+^https?:\/\/(api|b)\.zhuishushenqi\.com\/advert - reject
+^https?:\/\/api01pbmp\.zhuishushenqi\.com\/gameAdvert - reject
+^https?:\/\/api\.zhuishushenqi\.com\/notification\/shelfMessage - reject
+^https?:\/\/api\.zhuishushenqi\.com\/notification\/shelfMessage - reject
+^https?:\/\/api\.zhuishushenqi\.com\/recommend - reject
+^https?:\/\/api\.zhuishushenqi\.com\/splashes\/ios - reject
+^https?:\/\/api\.zhuishushenqi\.com\/user\/bookshelf-updated - reject
+^https?:\/\/b\.zhuishushenqi\.com\/advert - reject
+^https?:\/\/dspsdk\.abreader\.com\/v\d\/api\/ad\? - reject
+^https?:\/\/itunes\.apple\.com\/lookup\?id=575826903 - reject
+^https?:\/\/mi\.gdt\.qq\.com\/gdt_mview\.fcg - reject
+
+[Script]
+
+http-response ^https?:\/\/(api|mapi)\.weibo\.(cn|com)\/2(\/groups\/timeline|\/statuses\/unread|\/statuses\/extend|\/comments\/build_comments|\/photo\/recommend_list|\/stories\/video_stream|\/statuses\/positives\/get|\/stories\/home_list|\/profile\/statuses|\/statuses\/friends\/timeline|\/service\/picfeed) requires-body=true,script-path=https://subweb.s3.fr-par.scw.cloud/Script/wb_ad,script-update-interval=86400
+http-response ^https?:\/\/(sdk|wb)app\.uve\.weibo\.com(\/interface\/sdk\/sdkad.php|\/wbapplua\/wbpullad.lua) requires-body=true,script-path=https://subweb.s3.fr-par.scw.cloud/Script/wb_launch,script-update-interval=86400
+
+http-response ^https:\/\/api\.rr\.tv[\s\S]*(channel|Feed|Choice|profile|Medal) max-size=524288,requires-body=true,script-path=https://subweb.s3.fr-par.scw.cloud/Script/RRad,script-update-interval=86400
+
+# Onewayticket255
+http-response https://oauth.secure.pixiv.net/auth/token requires-body=1,max-size=0,script-path=https://subweb.s3.fr-par.scw.cloud/Script/pixiv_premium,script-update-interval=86400
+
+http-response https://abema.tv/.* requires-body=1,max-size=-1,script-path=https://subweb.s3.fr-par.scw.cloud/Script/surge_abematv_web,script-update-interval=86400
+
+[MITM]
+enable = true
+tcp-connection = false
+skip-server-cert-verify = false
+hostname = *.abema.tv, *.music.163.com, *.music.126.net, *.chelaile.net.cn, *.didistatic.com, *.google-analytics.com, *.googlevideo.com, *.iydsj.com, *.k.sohu.com, *.kfc.com, *.kingsoft-office-service.com, *.meituan.net, *.ofo.com, *.pixiv.net, *.uve.weibo.com, *.wikipedia.org, *.wikiwand.com, *.ydstatic.com, *.youdao.com, *.youtube.com, *.zhuishushenqi.com, 119.18.193.135, 123.59.31.1, 153.3.236.81, 180.101.212.22, 218.11.3.70, 59.151.53.6, a.apicloud.com, a.applovin.com, a.qiumibao.com, a.sfansclub.com, a.wkanx.com, abema.tv, acs.m.taobao.com, act.vip.iqiyi.com, adse.ximalaya.com, api*.musical.ly, api-release.wuta-cam.com, api.abema.io, api.bilibili.com, api.daydaycook.com.cn, api.gotokeep.com, api.intsig.net, api.jr.mi.com, api.jxedt.com, api.kkmh.com, api.m.jd.com, api.mgzf.com, api.psy-1.com, api.rr.tv, api.smzdm.com, api.tv.sohu.com, api.wallstreetcn.com, api.weibo.cn, api.xiachufang.com, api.zhihu.com, api.zhuishushenqi.com, api5.futunn.com, app.10086.cn, app.58.com, app.api.ke.com, app.bilibili.com, app.mixcapp.com, app.variflight.com, app.wy.guahao.com, b.zhuishushenqi.com, c.m.163.com, cap.caocaokeji.cn, capi.mwee.cn, cdn.moji.com, channel.beitaichufang.com, client.mail.163.com, cms.daydaycook.com.cn, dspsdk.abreader.com, fdfs.xmcdn.com, gateway.shouqiev.com, gw-passenger.01zhuanche.com, gw.alicdn.com, huichuan.sm.cn, i.weread.qq.com, i.ys7.com, iapi.bishijie.com, iface.iqiyi.com, img*.doubanio.com, img.jiemian.com, interface.music.163.com, ios.wps.cn, m*.amap.com, m.client.10010.com, m.creditcard.ecitic.com, m.ibuscloud.com, m.yap.yahoo.com, mapi.mafengwo.cn, mapi.weibo.com, media.qyer.com, mi.gdt.qq.com, mob.mddcloud.com.cn, mobile-api2011.elong.com, mp.weixin.qq.com, mrobot.pcauto.com.cn, mrobot.pconline.com.cn, ms.jr.jd.com, msspjh.emarbox.com, music.163.com, music.126.net, newsso.map.qq.com, nnapp.cloudbae.cn, open.qyer.com, portal-xunyou.qingcdn.com, pss.txffp.com, r.inews.qq.com, render.alipay.com, res-release.wuta-cam.com, richmanapi.jxedt.com, service.4gtv.tv, smkmp.96225.com, snailsleep.net, sp.kaola.com, ssl.kohsocialapp.qq.com, static.vuevideo.net, static1.keepcdn.com, support.you.163.com, thor.weidian.com, www.dandanzan.com, www.flyertea.com, www.zhihu.com, youtubei.googleapis.com, zhidao.baidu.com
+
+[Proxy]
+DIRECT = direct
+到期: 2026-12-03 = anytls, a1973dd7-a509.163cdn-ai.com, 14095, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+重置: 2026-11-03 = anytls, a1973dd7-a509.163cdn-ai.com, 14095, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+获取: 2026-11-03 12:11:26 = anytls, a1973dd7-a509.163cdn-ai.com, 14095, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+流量: 0 GB / 200 GB = anytls, a1973dd7-a509.163cdn-ai.com, 14095, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇭🇰 日用 专线 香港[0.2] = anytls, a1973dd7-a509.163cdn-ai.com, 14095, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇸🇬 日用 专线 狮城[0.2] = anytls, a1973dd7-a509.163cdn-ai.com, 14096, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇯🇵 日用 专线 日本[0.2] = anytls, a1973dd7-a509.163cdn-ai.com, 14097, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇺🇸 日用 专线 美国[0.2] = anytls, a1973dd7-a509.163cdn-ai.com, 14098, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇭🇰 高级 专线 香港 01 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14521, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇭🇰 高级 专线 香港 02 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14522, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇭🇰 高级 专线 香港 03 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14523, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇭🇰 高级 专线 香港 04 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14524, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇭🇰 高级 专线 香港 05 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14525, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇭🇰 高级 专线 香港 06 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14526, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇭🇰 高级 专线 香港 07 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14527, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇭🇰 高级 专线 香港 08 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14528, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇭🇰 高级 专线 香港 09 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14529, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇭🇰 高级 专线 香港 10 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14530, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇭🇰 高级 专线 香港 11 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14531, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇸🇬 高级 专线 狮城 01 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14543, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇸🇬 高级 专线 狮城 02 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14544, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇸🇬 高级 专线 狮城 03 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14545, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇸🇬 高级 专线 狮城 04 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14546, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇸🇬 高级 专线 狮城 05 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14547, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇸🇬 高级 专线 狮城 06 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14548, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇸🇬 高级 专线 狮城 07 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14549, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇸🇬 高级 专线 狮城 08 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14550, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇺🇸 高级 专线 美国 01 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14583, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇺🇸 高级 专线 美国 02 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14584, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇺🇸 高级 专线 美国 03 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14585, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇺🇸 高级 专线 美国 04 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14586, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇺🇸 高级 专线 美国 05 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14587, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇺🇸 高级 专线 美国 06 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14588, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇺🇸 高级 专线 美国 07 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14589, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇺🇸 高级 专线 美国 08 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14590, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇺🇸 高级 专线 美国 09 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14591, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇺🇸 高级 专线 美国 10 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14592, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇺🇸 高级 专线 美国 11 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14593, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇺🇸 高级 专线 美国 12 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14594, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇺🇸 高级 专线 美国 13 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14595, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇺🇸 高级 专线 美国 14 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14596, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇺🇸 高级 专线 美国 15 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14597, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇺🇸 高级 专线 美国 16 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14598, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇰🇷 高级 专线 韩国 01 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14629, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇰🇷 高级 专线 韩国 02 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14630, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇰🇷 高级 专线 韩国 03 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14631, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇨🇳 高级 专线 台湾 01 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14615, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇨🇳 高级 专线 台湾 02 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14616, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇨🇳 高级 专线 台湾 03 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14617, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇯🇵 高级 专线 日本 01 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14559, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇯🇵 高级 专线 日本 02 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14560, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇯🇵 高级 专线 日本 03 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14561, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇯🇵 高级 专线 日本 04 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14562, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇯🇵 高级 专线 日本 05 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14563, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇯🇵 高级 专线 日本 06 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14564, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇯🇵 高级 专线 日本 07 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14565, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇯🇵 高级 专线 日本 08 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14566, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇯🇵 高级 专线 日本 09 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14567, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇯🇵 高级 专线 日本 10 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14568, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇯🇵 高级 专线 日本 11 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14569, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇯🇵 高级 专线 日本 12 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14570, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇬🇧 边缘 专线 伦敦 01 = anytls, 8917d3f6-590c-11f1.163cdn-ai.com, 14666, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇬🇧 边缘 专线 伦敦 02 = anytls, 8917d3f6-590c-11f1.163cdn-ai.com, 14667, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇩🇪 边缘 专线 德国 01 = anytls, 8917d3f6-590c-11f1.163cdn-ai.com, 14664, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇩🇪 边缘 专线 德国 02 = anytls, 8917d3f6-590c-11f1.163cdn-ai.com, 14665, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇧🇷 边缘 专线 巴西 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14633, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇨🇦 边缘 专线 加拿大 01 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14634, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇨🇦 边缘 专线 加拿大 02 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14635, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇹🇷 边缘 专线 土耳其 01 = anytls, 8917d3f6-590c-11f1.163cdn-ai.com, 14663, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇹🇷 边缘 专线 土耳其 02 = anytls, 8917d3f6-590c-11f1.163cdn-ai.com, 14673, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇹🇭 边缘 专线 泰国 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14618, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇻🇳 边缘 专线 越南 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14619, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇮🇳 边缘 专线 印度 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14621, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇦🇺 边缘 专线 悉尼 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14622, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇦🇪 边缘 专线 迪拜 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14623, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇫🇷 边缘 专线 法国 = anytls, 8917d3f6-590c-11f1.163cdn-ai.com, 14668, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇳🇱 边缘 专线 荷兰 = anytls, 8917d3f6-590c-11f1.163cdn-ai.com, 14671, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇮🇩 边缘 专线 印尼 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14625, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇿🇦 边缘 专线 南非 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14626, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇪🇬 边缘 专线 埃及 = anytls, 8917d3f6-590c-11f1.163cdn-ai.com, 14674, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇵🇭 边缘 专线 菲律宾 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14620, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇮🇹 边缘 专线 意大利 = anytls, 8917d3f6-590c-11f1.163cdn-ai.com, 14660, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇪🇸 边缘 专线 西班牙 = anytls, 8917d3f6-590c-11f1.163cdn-ai.com, 14659, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇭🇺 边缘 专线 匈牙利 = anytls, 8917d3f6-590c-11f1.163cdn-ai.com, 14662, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇮🇱 边缘 专线 以色列 = anytls, 8917d3f6-590c-11f1.163cdn-ai.com, 14669, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇺🇦 边缘 专线 乌克兰 = anytls, 8917d3f6-590c-11f1.163cdn-ai.com, 14670, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇲🇾 边缘 专线 马来西亚 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14628, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇳🇬 边缘 专线 尼日利亚 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14624, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇵🇰 边缘 专线 巴基斯坦 = anytls, 8917d3f6-590c-11f2.163cdn-ai.com, 14627, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇲🇩 边缘 专线 摩尔多瓦 = anytls, 8917d3f6-590c-11f1.163cdn-ai.com, 14672, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+🇦🇷 购物 专线 阿根廷 = anytls, 8917d3f6-590c-11f3.163cdn-ai.com, 14632, password=3480a8a811, sni=teambition-file.oss-cn-zhangjiakou.aliyuncs.com, skip-cert-verify=true, tfo=false, udp-relay=true
+
+[Host]
+8917d3f6-590c-11f1.163cdn-ai.com=eb8bbd9e-693e-11f11.163cdn-ai.com
+8917d3f6-590c-11f2.163cdn-ai.com=eb8bbd9e-693e-11f12.163cdn-ai.com
+8917d3f6-590c-11f3.163cdn-ai.com=eb8bbd9e-693e-11f13.163cdn-ai.com
+a1973dd7-a509.163cdn-ai.com=28b67842-59fb-11f.163cdn-ai.com
+
+[Proxy Group]
+Proxies = select,HK,JP,SG,TW,US,到期: 2026-12-03,重置: 2026-11-03,获取: 2026-11-03 12:11:26,流量: 0 GB / 200 GB,🇭🇰 日用 专线 香港[0.2],🇸🇬 日用 专线 狮城[0.2],🇯🇵 日用 专线 日本[0.2],🇺🇸 日用 专线 美国[0.2],🇭🇰 高级 专线 香港 01,🇭🇰 高级 专线 香港 02,🇭🇰 高级 专线 香港 03,🇭🇰 高级 专线 香港 04,🇭🇰 高级 专线 香港 05,🇭🇰 高级 专线 香港 06,🇭🇰 高级 专线 香港 07,🇭🇰 高级 专线 香港 08,🇭🇰 高级 专线 香港 09,🇭🇰 高级 专线 香港 10,🇭🇰 高级 专线 香港 11,🇸🇬 高级 专线 狮城 01,🇸🇬 高级 专线 狮城 02,🇸🇬 高级 专线 狮城 03,🇸🇬 高级 专线 狮城 04,🇸🇬 高级 专线 狮城 05,🇸🇬 高级 专线 狮城 06,🇸🇬 高级 专线 狮城 07,🇸🇬 高级 专线 狮城 08,🇺🇸 高级 专线 美国 01,🇺🇸 高级 专线 美国 02,🇺🇸 高级 专线 美国 03,🇺🇸 高级 专线 美国 04,🇺🇸 高级 专线 美国 05,🇺🇸 高级 专线 美国 06,🇺🇸 高级 专线 美国 07,🇺🇸 高级 专线 美国 08,🇺🇸 高级 专线 美国 09,🇺🇸 高级 专线 美国 10,🇺🇸 高级 专线 美国 11,🇺🇸 高级 专线 美国 12,🇺🇸 高级 专线 美国 13,🇺🇸 高级 专线 美国 14,🇺🇸 高级 专线 美国 15,🇺🇸 高级 专线 美国 16,🇰🇷 高级 专线 韩国 01,🇰🇷 高级 专线 韩国 02,🇰🇷 高级 专线 韩国 03,🇨🇳 高级 专线 台湾 01,🇨🇳 高级 专线 台湾 02,🇨🇳 高级 专线 台湾 03,🇯🇵 高级 专线 日本 01,🇯🇵 高级 专线 日本 02,🇯🇵 高级 专线 日本 03,🇯🇵 高级 专线 日本 04,🇯🇵 高级 专线 日本 05,🇯🇵 高级 专线 日本 06,🇯🇵 高级 专线 日本 07,🇯🇵 高级 专线 日本 08,🇯🇵 高级 专线 日本 09,🇯🇵 高级 专线 日本 10,🇯🇵 高级 专线 日本 11,🇯🇵 高级 专线 日本 12,🇬🇧 边缘 专线 伦敦 01,🇬🇧 边缘 专线 伦敦 02,🇩🇪 边缘 专线 德国 01,🇩🇪 边缘 专线 德国 02,🇧🇷 边缘 专线 巴西,🇨🇦 边缘 专线 加拿大 01,🇨🇦 边缘 专线 加拿大 02,🇹🇷 边缘 专线 土耳其 01,🇹🇷 边缘 专线 土耳其 02,🇹🇭 边缘 专线 泰国,🇻🇳 边缘 专线 越南,🇮🇳 边缘 专线 印度,🇦🇺 边缘 专线 悉尼,🇦🇪 边缘 专线 迪拜,🇫🇷 边缘 专线 法国,🇳🇱 边缘 专线 荷兰,🇮🇩 边缘 专线 印尼,🇿🇦 边缘 专线 南非,🇪🇬 边缘 专线 埃及,🇵🇭 边缘 专线 菲律宾,🇮🇹 边缘 专线 意大利,🇪🇸 边缘 专线 西班牙,🇭🇺 边缘 专线 匈牙利,🇮🇱 边缘 专线 以色列,🇺🇦 边缘 专线 乌克兰,🇲🇾 边缘 专线 马来西亚,🇳🇬 边缘 专线 尼日利亚,🇵🇰 边缘 专线 巴基斯坦,🇲🇩 边缘 专线 摩尔多瓦,🇦🇷 购物 专线 阿根廷
+Cloudflare = select,Proxies,DIRECT,HK,JP,SG,TW,US
+YouTube = select,Proxies,HK,JP,SG,TW,US
+Disney = select,Proxies,HK,JP,SG,TW,US
+Hbomax = select,Proxies,HK,JP,SG,TW,US
+Netflix = select,Proxies,HK,JP,SG,TW,US
+Bahamut = select,Proxies,HK,TW
+Bilibili = select,DIRECT,HK,TW
+Spotify = select,Proxies,DIRECT,HK,JP,SG,TW,US
+Steam = select,Proxies,DIRECT,HK,JP,SG,TW,US
+Telegram = select,Proxies,HK,JP,SG,TW,US
+Google = select,Proxies,HK,JP,SG,TW,US
+Microsoft = select,Proxies,DIRECT,HK,JP,SG,TW,US
+OpenAI = select,Proxies,HK,JP,SG,TW,US
+PayPal = select,Proxies,DIRECT,HK,JP,SG,TW,US
+Apple Push = select,Proxies,DIRECT
+Apple = select,Proxies,DIRECT,HK,JP,SG,TW,US
+Final = select,Proxies,DIRECT
+HK = select,🇭🇰 日用 专线 香港[0.2],🇭🇰 高级 专线 香港 01,🇭🇰 高级 专线 香港 02,🇭🇰 高级 专线 香港 03,🇭🇰 高级 专线 香港 04,🇭🇰 高级 专线 香港 05,🇭🇰 高级 专线 香港 06,🇭🇰 高级 专线 香港 07,🇭🇰 高级 专线 香港 08,🇭🇰 高级 专线 香港 09,🇭🇰 高级 专线 香港 10,🇭🇰 高级 专线 香港 11
+JP = select,🇯🇵 日用 专线 日本[0.2],🇯🇵 高级 专线 日本 01,🇯🇵 高级 专线 日本 02,🇯🇵 高级 专线 日本 03,🇯🇵 高级 专线 日本 04,🇯🇵 高级 专线 日本 05,🇯🇵 高级 专线 日本 06,🇯🇵 高级 专线 日本 07,🇯🇵 高级 专线 日本 08,🇯🇵 高级 专线 日本 09,🇯🇵 高级 专线 日本 10,🇯🇵 高级 专线 日本 11,🇯🇵 高级 专线 日本 12
+SG = select,🇸🇬 日用 专线 狮城[0.2],🇸🇬 高级 专线 狮城 01,🇸🇬 高级 专线 狮城 02,🇸🇬 高级 专线 狮城 03,🇸🇬 高级 专线 狮城 04,🇸🇬 高级 专线 狮城 05,🇸🇬 高级 专线 狮城 06,🇸🇬 高级 专线 狮城 07,🇸🇬 高级 专线 狮城 08
+TW = select,🇨🇳 高级 专线 台湾 01,🇨🇳 高级 专线 台湾 02,🇨🇳 高级 专线 台湾 03
+US = select,🇺🇸 日用 专线 美国[0.2],🇺🇸 高级 专线 美国 01,🇺🇸 高级 专线 美国 02,🇺🇸 高级 专线 美国 03,🇺🇸 高级 专线 美国 04,🇺🇸 高级 专线 美国 05,🇺🇸 高级 专线 美国 06,🇺🇸 高级 专线 美国 07,🇺🇸 高级 专线 美国 08,🇺🇸 高级 专线 美国 09,🇺🇸 高级 专线 美国 10,🇺🇸 高级 专线 美国 11,🇺🇸 高级 专线 美国 12,🇺🇸 高级 专线 美国 13,🇺🇸 高级 专线 美国 14,🇺🇸 高级 专线 美国 15,🇺🇸 高级 专线 美国 16
+
+
